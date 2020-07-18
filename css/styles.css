@@ -277,6 +277,19 @@ main header {
 	color: #cf1578;
 }
 
+ @media screen and (max-width:967px){
+ 	html{
+ 		  display:block;
+ 	}
+
+ 	footer{
+ 		display:block;
+ 	}
+        .container{
+            display:block;
+ 	}
+ 	}
+
 
 
 /*quote design*/
