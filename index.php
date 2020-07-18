@@ -27,8 +27,11 @@
 	<section class="bottom-left">
 		<div class="name-reference">
 			<div class="class-name">Advanced Front-end Web Design and Development</div>
-			<img src="images/book-reference.png"  alt="book-logo">
-			<a href="https://docs.csc174.org/" target="_blank">About this course</a>
+
+			<div class="img-reference">
+
+				<a href="https://docs.csc174.org/" target="_blank">About this course</a>
+			</div>
 		</div>
 	</section>
 

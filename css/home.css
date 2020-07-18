@@ -25,6 +25,7 @@ body{
 	height: 100%;
 }
 
+
 section {
 	/*border: 1px solid white;*/
 
@@ -58,12 +59,18 @@ a:hover:after{
 .upper-left img{
 	transform:rotate(-7deg);
 }
+@media (max-width: 1600px){
+	.upper-left .class-number{
+	    font-size: 115px;
+	    letter-spacing: 10px;
+	}
+}	
 
 
 .upper-right .login-container{
 	text-align: center;
 
-	width: 500px;
+	width: 90%;
 }
 .upper-right a{
 	font-size: 60px;
@@ -79,7 +86,12 @@ a:hover:after{
 	font-size: 200px;
 	letter-spacing: 12px;
 }
-
+@media (max-width: 1600px){
+	.middle .welcome{
+	    font-size: 170px;
+	    letter-spacing: 10px;
+	}
+}
 
 
 .bottom-left .name-reference{
@@ -87,13 +99,21 @@ a:hover:after{
 	text-align: center;
 }
 .bottom-left .class-name{
-	width: 700px;
+	width: 109%;
 	font-size: 30px;
 
 	margin-bottom: 10px;
 }
+.bottom-left .img-reference{
+	background: url(../images/book-reference.png);
+	background-repeat: no-repeat;
+	background-position: 28% 0px;
+}
+
 .bottom-left a{
+	display: block;
 	font-size: 25px;
+	padding: 15px;
 }
 
 
@@ -105,19 +125,20 @@ a:hover:after{
 .bottom-right .team-reference{
 	text-align: center;
 
-	width: 550px;
+	width: 90%;
 
 	background: url(../images/go-to.png);
 	background-repeat: no-repeat;
-	background-position: 370px 0px;
+	background-position: 78% 0px;
 }
 .bottom-right .team-reference a{
 	display: block;
 }
-
-
-
-
+@media (max-width: 1800px){
+	.bottom-left .img-reference, .bottom-right .team-reference{
+		background: none;
+	}
+}
 
 /* ------------------------------------------------------------------ 
  layout
@@ -141,12 +162,17 @@ body{
 }
 .upper-left .number-semester .semester{
 	position: relative;
-	left: 300px;
+	left: 46.8%;
     top: 40px;
 }
+@media (max-width: 1600px){
+	.upper-left .number-semester .semester{
+    	top: 30px;
+	}
+}	
 .upper-left img{
 	position: absolute;
-	left: 55px;
+	left: 2%;
     top: 0px;
 }
 
@@ -157,8 +183,11 @@ body{
 }
 .upper-right .login-container{
 	position: relative;
-    top: 143px;
-    left: 10px;
+	text-align: center;
+    top: 43.3%;
+    left: 3.2%;
+
+    width: 90%;
 }
 
 
@@ -169,8 +198,8 @@ body{
 }
 .middle .welcome{
 	position: relative;
-	top: 30px;
-	left: -58px;
+	top: 10%;
+    left: -2%;
 }
 
 
@@ -181,15 +210,10 @@ body{
 }
 .bottom-left .name-reference{
 	position: relative;
-	top: 80px;
-	left: 75px;
+	top: 25.6%;
+    left: 11.7%;
 }
-.bottom-left .name-reference img{
-	position: absolute;
-	top: 35px;
-    left: 150px;
-	z-index: -1;
-}
+
 
 /*bottom-right - layout*/
 .bottom-right{
@@ -198,8 +222,8 @@ body{
 }
 .bottom-right .team-reference{
 	position: relative;
-    top: 80px;
-    left: 15px;
+    top: 31.2%;
+    left: 3.2%;
 }
 
 
