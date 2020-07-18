@@ -22,7 +22,7 @@
 					<p>Michael is a student at the University of Rochester, majoring in Computer Science, minoring in Linguistics, and clustering in Gender, Sexuality, and Women's Studies.</p>
 					<p>Here is a list of some of the courses he has taken in the computer science field in his time at U of R:</p></div>
 					<div class="classes">
-					<div id = "accordion">
+					<div class="accordion">
 						<h3>Computer Science</h3><div class="pannel">
 					<ul>
 						<li>CSC 170</li>
@@ -94,16 +94,17 @@
 				<section class="container">
 					<h2>Fun facts</h2>
 					<h3>Favorite things</h3>
-					<div class="gridi">
-						<div>
-							<h4>Animals</h4>
+					<div class="gridi Favourites">
+				
+						<div class="accordion">
+							<h4>Animals</h4><div class="pannel">
 							<ul>
 								<li>Dogs</li>
 								<li>Dolphins</li>
 								<li>Apes</li>
-							</ul>
+							</ul> </div>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Colors</h4>
 							<ul>
 								<li>Blue</li>
@@ -111,7 +112,7 @@
 								<li>Purple</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Dream Roles</h4>
 							<ul>
 								<li>Charlemange from <cite>Pippin</cite></li>
@@ -119,7 +120,7 @@
 								<li>Sweet Tooth from <cite>Holy Musical B@Man</cite></li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Musicals</h4>
 							<ol>
 								<li><cite>Pippin</cite> by Stephen Schwartz</li>
@@ -127,7 +128,7 @@
 								<li><cite>Groundhog Day</cite> by Tim Minchin</li>
 							</ol>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Musicians</h4>
 							<ul>
 								<li>Crosby, Stills, & Nash, (& Young)</li>
@@ -135,7 +136,7 @@
 								<li>Tim Minchin</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Starkid Musicals</h4>
 							<ul>
 								<li><cite>Twisted: The Untold Story of a Royal Vizier</cite></li>
@@ -143,7 +144,7 @@
 								<li><cite>The Guy Who Didn't Like Musicals</cite></li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Starkid Musicals (Continued)</h4>
 							<ul>
 								<li><cite>Holy Musical B@Man</cite></li>
@@ -151,7 +152,7 @@
 								<li><cite>Starship</cite></li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>TV/Web Shows</h4>
 							<ul>
 								<li><cite>Doctor Who</cite></li>
@@ -159,7 +160,7 @@
 								<li><cite>Edgar Allan Poe's Murder Mystery Invite Only Casual Dinner Party / Gala For Friends Potluck</cite></li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Video Games</h4>
 							<ul>
 								<li>FTL: Faster than Light</li>
@@ -196,7 +197,7 @@
 		<?php include "inc/scripts.php"; ?>
 		<script>
 		  $( function() {
-		    $( "#accordion" ).accordion({
+		    $( ".accordion" ).accordion({
 		      collapsible: true
 		    });
 		  } );

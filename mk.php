@@ -21,7 +21,7 @@
 				<p>Molly Kilian is a rising sophomore at the University of Rochester, interested in a wide variety of subjects. She is planning to major in some form of humanities or social science, and to minor in Computer Science and/or Digital Media Studies.</p>
 				<p>She has taken the following classes in her time at U of R:</p></div>
 				<div class="classes">
-				<div id = "accordion">
+				<div class="accordion">
 				
 					<h3>Fall 2019</h3><div class="pannel">
 					<ul>
@@ -117,8 +117,8 @@
 	<section class="interests container">
 		<h2>Fun facts</h2>
 			<h3>Favorite things:</h3>
-			<div class="gridi">
-				<div>
+			<div class="gridi Favourites">
+				<div class="accordion">
 					<h4>Animals</h4>
 						<ul>
 							<li>Rabbits</li>
@@ -126,7 +126,7 @@
 							<li>Otters</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Books</h4>
 						<ul>
 							<li>Anna Karenina</li>
@@ -134,7 +134,7 @@
 							<li>What the Night Sings</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Colors</h4>
 						<ul>
 							<li>Yellow</li>
@@ -142,7 +142,7 @@
 							<li>Peach</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Figure Skaters</h4>
 						<ul>
 							<li>Evgenia Medvedeva</li>
@@ -150,7 +150,7 @@
 							<li>Gracie Gold</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Movies</h4>
 						<ul>
 							<li>Dead Poets Society</li>
@@ -158,7 +158,7 @@
 							<li>Christopher Robin</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Musicals</h4>
 						<ul>
 							<li>Hamilton</li>
@@ -166,7 +166,7 @@
 							<li>The Spongebob Squarepants Musical</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Musicians</h4>
 						<ul>
 							<li>Ben Platt</li>
@@ -174,7 +174,7 @@
 							<li>Chopin</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>Seasons</h4>
 						<ul>
 							<li>Winter</li>
@@ -182,7 +182,7 @@
 							<li>Spring</li>
 						</ul>
 				</div>
-				<div>
+				<div class="accordion">
 					<h4>TV Shows</h4>
 						<ul>
 							<li>Andi Mack</li>
@@ -221,7 +221,7 @@
 <?php include "inc/scripts.php"; ?>
 	<script>
 		  $( function() {
-		    $( "#accordion" ).accordion({
+		    $( ".accordion" ).accordion({
 		      collapsible: true
 		    });
 		  } );

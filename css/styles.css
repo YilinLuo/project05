@@ -92,14 +92,14 @@ footer {
 
 .gridi {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
 }
 
 .pets{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/*grid-template-rows: repeat(2, 1fr);*/
+	grid-template-rows: repeat(1, 1fr);
 	grid-column-gap: 15px;
 	grid-row-gap: 0px;
 }
@@ -181,6 +181,15 @@ footer {
 
 .Academics h3:hover{
   color: #cf1578;
+}
+
+.Favourites h4{
+	background-color: #eee;
+	padding: 10px 0px 10px 15px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border-bottom: 0.5px solid slategrey;
+	color: #027f98;
 }
 
 

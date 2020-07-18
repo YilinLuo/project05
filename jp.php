@@ -24,7 +24,7 @@
 					<p>Joo Eon Park is a student at the University of Rochester, majoring in Computer Science with a minor in Digital Media Studies. His intended clusters are Music and Public Health.</p>
 					<p>Here are some of the courses he has taken in his time at the University of Rochester:</p></div>
 					<div class="classes">
-						<div id = "accordion">
+						<div class="accordion">
 					<h3>Computer Science</h3><div class="pannel">
 					<ul>
 						<li>CSC 170 - Introduction to Web Development</li>
@@ -112,8 +112,8 @@
 				<section class="container">
 					<h2>Fun facts</h2>
 					<h3>Favorite things</h3>
-					<div class="gridi">
-						<div>
+					<div class="gridi Favourites">
+						<div class="accordion">
 							<h4>Artists</h4>
 							<ul>
 								<li>M.C. Escher</li>
@@ -121,7 +121,7 @@
 								<li>Banksy</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Bands</h4>
 							<ul>
 								<li>Hyukoh</li>
@@ -129,7 +129,7 @@
 								<li>Nirvana</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Colors</h4>
 							<ul>
 								<li>Black</li>
@@ -137,7 +137,7 @@
 								<li>Blue</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Countries to visit</h4>
 							<ul>
 								<li>France</li>
@@ -145,7 +145,7 @@
 								<li>Greece</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Cuisine</h4>
 							<ul>
 								<li>Indian Food</li>
@@ -153,7 +153,7 @@
 								<li>Korean Food</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Documentaries</h4>
 							<ul>
 								<li>Planet Earth</li>
@@ -161,7 +161,7 @@
 								<li>Conversations with a Killer: The Ted Bundy Tapes</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Musicians</h4>
 							<ul>
 								<li>Jimi Hendrix</li>
@@ -169,7 +169,7 @@
 								<li>Kurt Cobain</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Snacks</h4>
 							<ul>
 								<li>Cheetos</li>
@@ -177,7 +177,7 @@
 								<li>Doritos</li>
 							</ul>
 						</div>
-						<div>
+						<div class="accordion">
 							<h4>Video Games</h4>
 							<ul>
 								<li>Mario Kart</li>
@@ -211,7 +211,7 @@
 
 	 <script>
 		  $( function() {
-		    $( "#accordion" ).accordion({
+		    $( ".accordion" ).accordion({
 		      collapsible: true
 		    });
 		  } );
