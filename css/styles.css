@@ -79,6 +79,7 @@ footer {
 	width: 100%;
 	padding-top: 0px;
 	padding-left: 22%;
+	padding-bottom: 0px;
 }
 
 /*********************LAYOUT*************************************/
@@ -197,9 +198,9 @@ footer {
 
 /* black background */
 .blacktop{
-	min-height: 60vh;
-	padding-bottom: 50px;
-	border-bottom: solid 30px;
+	min-height: 20vh;
+	padding-bottom: 3px;
+	border-bottom: solid 10px;
 	border-bottom-color: #cf1578;
 	background-color: #322e2f;
 	color: #FFFFFF;
@@ -226,6 +227,7 @@ footer {
 
 .blackcontent figure{
 	padding-top: 20px;
+	padding-bottom: 0px;
 }
 
 main header {
@@ -269,6 +271,11 @@ main header {
 .name{
 	color: #e8d21d;
 	font-family: 'Mulish', sans-serif;
+	padding-top: 0px;
+}
+
+.accordion h4:hover{
+	color: #cf1578;
 }
 
 
