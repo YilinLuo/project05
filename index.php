@@ -36,7 +36,7 @@
 
 	<section class="bottom-right">
 		<div class="team-reference">
-			<a href="secondary.php">View Our Teams</a>
+			<a href="secondary.php">Our Team</a>
 		</div>
 	</section>
 
