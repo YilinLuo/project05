@@ -16,16 +16,26 @@
 }
 
 .menu a {
+	font-size: 1.8em;
+
 	display: block;
 	justify-content: center;
-	color : #333333;
+	color : #039fbe;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-
-
 .menu a:hover {
 	color: mediumvioletred;
 }
+.menu .menu-home{
+	background: url(../images/go-back.png);
+	background-repeat: no-repeat;
+	background-position: -8px 10px;
+	
+	display: block;
+    width: 94px;
+    text-align: right;
+}
+
 
 .menu a.is-current {
 	color: mediumvioletred;

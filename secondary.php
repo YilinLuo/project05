@@ -4,7 +4,10 @@
 <article>
 	<header class="blacktop2">
 		<div class = "blackcontent">
-			<div class="homebtn"><a href="index.php">Home</a></div>
+			<div class="homebtn">
+				<a href="index.php">Home</a>
+			</div>
+
 			<h1 class="London">London</h1>
 		</div>
 	</header>
