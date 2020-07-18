@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* ------------------------------------------------------------------ 
+ Base
+ ------------------------------------------------------------------ */
+
+html {
+    margin:0 auto;
+    padding:0;
+
+    width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+
+	font-family: 'Bebas Neue', cursive;
+	color: #d9d9d9;
+
+	background-color: #322e2f;
+	background-size: 100% 100%;
+
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	/*border: 1px solid white;*/
+
+	border-collapse: collapse;
+}
+
+a{
+	color: #12a4d9;
+}
+a:hover{
+	color: #d9138a;
+	transition: 2s;
+
+	text-decoration: none;
+}
+a:hover:before{
+	content: "<";
+}
+a:hover:after{
+	content: ">";
+}
+
+
+.upper-left .semester{
+	font-size: 30px;
+}
+.upper-left .class-number{
+    font-size: 150px;
+    letter-spacing: 10px;
+}
+.upper-left img{
+	transform:rotate(-7deg);
+}
+
+
+.upper-right .login-container{
+	text-align: center;
+
+	width: 500px;
+}
+.upper-right a{
+	font-size: 60px;
+
+	padding: 20px;
+
+	display: block;
+}
+
+
+.middle .welcome{
+	font-style: italic;
+	font-size: 200px;
+	letter-spacing: 12px;
+}
+
+
+
+.bottom-left .name-reference{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+.bottom-left .class-name{
+	width: 700px;
+	font-size: 30px;
+
+	margin-bottom: 10px;
+}
+.bottom-left a{
+	font-size: 25px;
+}
+
+
+
+.bottom-right{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+}
+.bottom-right .team-reference{
+	text-align: center;
+
+	width: 550px;
+
+	background: url(../images/go-to.png);
+	background-repeat: no-repeat;
+	background-position: 370px 0px;
+}
+.bottom-right .team-reference a{
+	display: block;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------ 
+ layout
+ ------------------------------------------------------------------ */
+
+/*page grid - layout*/
+body{
+	display: grid;
+	grid-template-columns: repeat(3, 33.33%);
+  	grid-template-rows: repeat(3, 33.33%);
+}
+
+/*upper-left  - layout*/
+.upper-left{
+	grid-column: 1 / 2;
+}
+.upper-left .number-semester{
+	position: relative;
+	left: 200px;
+    top: 75px;
+}
+.upper-left .number-semester .semester{
+	position: relative;
+	left: 300px;
+    top: 40px;
+}
+.upper-left img{
+	position: absolute;
+	left: 55px;
+    top: 0px;
+}
+
+
+/*upper-right  - layout*/
+.upper-right{
+	grid-column: 3 / 4;
+}
+.upper-right .login-container{
+	position: relative;
+    top: 143px;
+    left: 10px;
+}
+
+
+/*middle - layout*/
+.middle{
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+.middle .welcome{
+	position: relative;
+	top: 30px;
+	left: -58px;
+}
+
+
+/*bottom-left - layout*/
+.bottom-left{
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+}
+.bottom-left .name-reference{
+	position: relative;
+	top: 80px;
+	left: 75px;
+}
+.bottom-left .name-reference img{
+	position: absolute;
+	top: 35px;
+    left: 150px;
+	z-index: -1;
+}
+
+/*bottom-right - layout*/
+.bottom-right{
+	grid-row: 3 / 4;
+	grid-column: 3 / 4;
+}
+.bottom-right .team-reference{
+	position: relative;
+    top: 80px;
+    left: 15px;
+}
+
+
+ /* ------------------------------------------------------------------ 
+ module
+ ------------------------------------------------------------------ */
+
+ @media screen and (max-width:967px){
+        .section{
+            display:block;
+        }
+
+        html{
+ 		  display:block;
+ 	}
+     
+        body{
+            display:block;
+        }
+    }
+
+ /* ------------------------------------------------------------------ 
+ state
+ ------------------------------------------------------------------ */
+
