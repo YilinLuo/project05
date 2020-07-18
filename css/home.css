@@ -109,9 +109,11 @@ a:hover:after{
 
 	background: url(../images/go-to.png);
 	background-repeat: no-repeat;
-	background-position: 450px 0px;
+	background-position: 370px 0px;
 }
-
+.bottom-right .team-reference a{
+	display: block;
+}
 
 
 
@@ -198,7 +200,6 @@ body{
 	position: relative;
     top: 80px;
     left: 15px;
-
 }
 
 
