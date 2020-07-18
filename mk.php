@@ -118,13 +118,15 @@
 		<h2>Fun facts</h2>
 			<h3>Favorite things:</h3>
 			<div class="gridi Favourites">
-				<div class="accordion">
-					<h4>Animals</h4>
-						<ul>
-							<li>Rabbits</li>
-							<li>Cats</li>
-							<li>Otters</li>
-						</ul>
+				<div class="first-favourite">
+					<div class="accordion">
+						<h4>Animals</h4>
+							<ul>
+								<li>Rabbits</li>
+								<li>Cats</li>
+								<li>Otters</li>
+							</ul>
+					</div>
 				</div>
 				<div class="accordion">
 					<h4>Books</h4>
@@ -221,10 +223,25 @@
 <?php include "inc/scripts.php"; ?>
 	<script>
 		  $( function() {
-		    $( ".accordion" ).accordion({
-		      collapsible: true
+		    $(".accordion").accordion({
+	        	collapsible: true,
+	        	active: false
 		    });
-		  } );
+		  });
+		   
+		  $( function() {
+		    $(".classes .accordion").accordion({
+	        	collapsible: true,
+	        	active: 0
+		    });
+		  }); 
+
+		  $( function() {
+		    $(".first-favourite .accordion").accordion({
+	        	collapsible: true,
+	        	active: 0
+		    });
+		  }); 
   	</script>
 </body>
 </html>

@@ -22,17 +22,21 @@
 					<p>Michael is a student at the University of Rochester, majoring in Computer Science, minoring in Linguistics, and clustering in Gender, Sexuality, and Women's Studies.</p>
 					<p>Here is a list of some of the courses he has taken in the computer science field in his time at U of R:</p></div>
 					<div class="classes">
-					<div class="accordion">
-						<h3>Computer Science</h3><div class="pannel">
-					<ul>
-						<li>CSC 170</li>
-						<li>CSC 171</li>
-						<li>CSC 172</li>
-						<li>CSC 173</li>
-						<li>CSC 242</li>
-						<li>CSC 247</li>
-						<li>CSC 250</li>
-					</ul></div></div></div></div>
+						<div class="accordion">
+							<h3>Computer Science</h3>
+							<div class="pannel">
+								<ul>
+									<li>CSC 170</li>
+									<li>CSC 171</li>
+									<li>CSC 172</li>
+									<li>CSC 173</li>
+									<li>CSC 242</li>
+									<li>CSC 247</li>
+									<li>CSC 250</li>
+								</ul>
+							</div>
+						</div>
+					</div></div>
 				</section>
 				<section class="container">
 					<h2>Interests</h2>
@@ -95,78 +99,105 @@
 					<h2>Fun facts</h2>
 					<h3>Favorite things</h3>
 					<div class="gridi Favourites">
-				
-						<div class="accordion">
-							<h4>Animals</h4><div class="pannel">
-							<ul>
-								<li>Dogs</li>
-								<li>Dolphins</li>
-								<li>Apes</li>
-							</ul> </div>
+						
+						<div class="first-favourite">
+							<div class="accordion">
+								<h4>Animals</h4>
+								<div>
+									<ul>
+										<li>Dogs</li>
+										<li>Dolphins</li>
+										<li>Apes</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<div class="accordion">
 							<h4>Colors</h4>
-							<ul>
-								<li>Blue</li>
-								<li>Magenta</li>
-								<li>Purple</li>
-							</ul>
+							<div>
+								<ul>
+									<li>Blue</li>
+									<li>Magenta</li>
+									<li>Purple</li>
+								</ul>
+							</div>
 						</div>
+						
 						<div class="accordion">
 							<h4>Dream Roles</h4>
-							<ul>
-								<li>Charlemange from <cite>Pippin</cite></li>
-								<li>Hades from <cite>Hadestown</cite></li>
-								<li>Sweet Tooth from <cite>Holy Musical B@Man</cite></li>
-							</ul>
+							<div>
+								<ul>
+									<li>Charlemange from <cite>Pippin</cite></li>
+									<li>Hades from <cite>Hadestown</cite></li>
+									<li>Sweet Tooth from <cite>Holy Musical B@Man</cite></li>
+								</ul>
+							</div>
 						</div>
+
 						<div class="accordion">
 							<h4>Musicals</h4>
-							<ol>
-								<li><cite>Pippin</cite> by Stephen Schwartz</li>
-								<li><cite>Hadestown</cite> by Anaïs Mitchell</li>
-								<li><cite>Groundhog Day</cite> by Tim Minchin</li>
-							</ol>
+							<div>
+								<ol>
+									<li><cite>Pippin</cite> by Stephen Schwartz</li>
+									<li><cite>Hadestown</cite> by Anaïs Mitchell</li>
+									<li><cite>Groundhog Day</cite> by Tim Minchin</li>
+								</ol>
+							</div>
 						</div>
+						
 						<div class="accordion">
 							<h4>Musicians</h4>
-							<ul>
-								<li>Crosby, Stills, & Nash, (& Young)</li>
-								<li>The Who</li>
-								<li>Tim Minchin</li>
-							</ul>
+							<div>
+								<ul>
+									<li>Crosby, Stills, & Nash, (& Young)</li>
+									<li>The Who</li>
+									<li>Tim Minchin</li>
+								</ul>
+							</div>
 						</div>
+						
 						<div class="accordion">
 							<h4>Starkid Musicals</h4>
-							<ul>
-								<li><cite>Twisted: The Untold Story of a Royal Vizier</cite></li>
-								<li><cite>Black Friday</cite></li>
-								<li><cite>The Guy Who Didn't Like Musicals</cite></li>
-							</ul>
+							<div>
+								<ul>
+									<li><cite>Twisted: The Untold Story of a Royal Vizier</cite></li>
+									<li><cite>Black Friday</cite></li>
+									<li><cite>The Guy Who Didn't Like Musicals</cite></li>
+								</ul>
+							</div>
 						</div>
+
 						<div class="accordion">
 							<h4>Starkid Musicals (Continued)</h4>
-							<ul>
-								<li><cite>Holy Musical B@Man</cite></li>
-								<li><cite>Trail To Oregon</cite></li>
-								<li><cite>Starship</cite></li>
-							</ul>
+							<div>
+								<ul>
+									<li><cite>Holy Musical B@Man</cite></li>
+									<li><cite>Trail To Oregon</cite></li>
+									<li><cite>Starship</cite></li>
+								</ul>
+							</div>
 						</div>
+						
 						<div class="accordion">
 							<h4>TV/Web Shows</h4>
-							<ul>
-								<li><cite>Doctor Who</cite></li>
-								<li><cite>Platoon of Power Squadron</cite></li>
-								<li><cite>Edgar Allan Poe's Murder Mystery Invite Only Casual Dinner Party / Gala For Friends Potluck</cite></li>
-							</ul>
+							<div>
+								<ul>
+									<li><cite>Doctor Who</cite></li>
+									<li><cite>Platoon of Power Squadron</cite></li>
+									<li><cite>Edgar Allan Poe's Murder Mystery Invite Only Casual Dinner Party / Gala For Friends Potluck</cite></li>
+								</ul>
+							</div>
 						</div>
+						
 						<div class="accordion">
 							<h4>Video Games</h4>
-							<ul>
-								<li>FTL: Faster than Light</li>
-								<li>Planet Coaster</li>
-								<li>Heat Signature</li>
-							</ul>
+							<div>
+								<ul>
+									<li>FTL: Faster than Light</li>
+									<li>Planet Coaster</li>
+									<li>Heat Signature</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<section>
@@ -197,10 +228,25 @@
 		<?php include "inc/scripts.php"; ?>
 		<script>
 		  $( function() {
-		    $( ".accordion" ).accordion({
-		      collapsible: true
+		    $(".accordion").accordion({
+	        	collapsible: true,
+	        	active: false
 		    });
-		  } );
+		  });
+		   
+		  $( function() {
+		    $(".classes .accordion").accordion({
+	        	collapsible: true,
+	        	active: 0
+		    });
+		  }); 
+
+		  $( function() {
+		    $(".first-favourite .accordion").accordion({
+	        	collapsible: true,
+	        	active: 0
+		    });
+		  }); 
   		</script>
 	</body>
 </html>

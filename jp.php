@@ -113,14 +113,17 @@
 					<h2>Fun facts</h2>
 					<h3>Favorite things</h3>
 					<div class="gridi Favourites">
-						<div class="accordion">
-							<h4>Artists</h4>
-							<ul>
-								<li>M.C. Escher</li>
-								<li>Bernard Buffet</li>
-								<li>Banksy</li>
-							</ul>
+						<div class="first-favourite">
+							<div class="accordion">
+								<h4>Artists</h4>
+								<ul>
+									<li>M.C. Escher</li>
+									<li>Bernard Buffet</li>
+									<li>Banksy</li>
+								</ul>
+							</div>
 						</div>
+
 						<div class="accordion">
 							<h4>Bands</h4>
 							<ul>
@@ -129,6 +132,7 @@
 								<li>Nirvana</li>
 							</ul>
 						</div>
+
 						<div class="accordion">
 							<h4>Colors</h4>
 							<ul>
@@ -137,6 +141,7 @@
 								<li>Blue</li>
 							</ul>
 						</div>
+
 						<div class="accordion">
 							<h4>Countries to visit</h4>
 							<ul>
@@ -145,6 +150,7 @@
 								<li>Greece</li>
 							</ul>
 						</div>
+
 						<div class="accordion">
 							<h4>Cuisine</h4>
 							<ul>
@@ -153,6 +159,7 @@
 								<li>Korean Food</li>
 							</ul>
 						</div>
+
 						<div class="accordion">
 							<h4>Documentaries</h4>
 							<ul>
@@ -161,6 +168,7 @@
 								<li>Conversations with a Killer: The Ted Bundy Tapes</li>
 							</ul>
 						</div>
+
 						<div class="accordion">
 							<h4>Musicians</h4>
 							<ul>
@@ -169,6 +177,7 @@
 								<li>Kurt Cobain</li>
 							</ul>
 						</div>
+
 						<div class="accordion">
 							<h4>Snacks</h4>
 							<ul>
@@ -177,6 +186,7 @@
 								<li>Doritos</li>
 							</ul>
 						</div>
+						
 						<div class="accordion">
 							<h4>Video Games</h4>
 							<ul>
@@ -211,10 +221,25 @@
 
 	 <script>
 		  $( function() {
-		    $( ".accordion" ).accordion({
-		      collapsible: true
+		    $(".accordion").accordion({
+	        	collapsible: true,
+	        	active: false
 		    });
-		  } );
+		  });
+		   
+		  $( function() {
+		    $(".classes .accordion").accordion({
+	        	collapsible: true,
+	        	active: 0
+		    });
+		  }); 
+
+		  $( function() {
+		    $(".first-favourite .accordion").accordion({
+	        	collapsible: true,
+	        	active: 0
+		    });
+		  }); 
   	</script>
 </body>
 </html>
