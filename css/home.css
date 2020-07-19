@@ -47,12 +47,6 @@ a:hover{
 
 	
 }
-/*a:hover:before{
-	content: "<";
-}
-a:hover:after{
-	content: ">";
-}*/
 
 .upper-left .number-semester {
 	/*width: fit-content;	*/
@@ -62,18 +56,12 @@ a:hover:after{
 	/*float: right;*/
 }
 .upper-left .class-number{
-    font-size: 80px;
-    letter-spacing: 8px;
+    font-size: 60px;
+    letter-spacing: 2px;
 }
 .upper-left img{
 	transform:rotate(-7deg);
 }
-@media (max-width: 1600px){
-	.upper-left .class-number{
-	    font-size: 115px;
-	    letter-spacing: 10px;
-	}
-}	
 
 
 .upper-right .login-container{
@@ -180,11 +168,7 @@ body{
     /*top: 40px;
     left: 67%;*/
 }
-@media (max-width: 1600px){
-	.upper-left .number-semester .semester{
-    	top: 30px;
-	}
-}	
+
 .upper-left img{
 	position: absolute;
 	left: 2%;
