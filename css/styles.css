@@ -44,13 +44,12 @@ h4 {
 a {
 	font-weight: 600;
 	font-size: 1.1em;
-
 	color: #12a4d9;
 	text-decoration : none;
 }
 
 a:hover {
-	color: #cf1578;
+	color: #1F5A94;
 }
 
 
@@ -176,11 +175,11 @@ footer {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	border-bottom: 0.5px solid slategrey;
-	color: #027f98;
+	color: #12a4d9;
 }
 
 .Academics h3:hover{
-  color: #cf1578;
+  color: #1F5A94;
 }
 
 .Favourites h4{
@@ -189,7 +188,7 @@ footer {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	border-bottom: 0.5px solid slategrey;
-	color: #027f98;
+	color: #12a4d9;
 }
 
 
@@ -274,7 +273,7 @@ main header {
 }
 
 .accordion h4:hover{
-	color: #cf1578;
+	color: #1F5A94;
 }
 
  @media screen and (max-width:967px){
