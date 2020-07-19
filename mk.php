@@ -176,14 +176,7 @@
 							<li>Chopin</li>
 						</ul>
 				</div>
-				<div class="accordion">
-					<h4>Seasons</h4>
-						<ul>
-							<li>Winter</li>
-							<li>Fall</li>
-							<li>Spring</li>
-						</ul>
-				</div>
+				
 				<div class="accordion">
 					<h4>TV Shows</h4>
 						<ul>

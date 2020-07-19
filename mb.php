@@ -163,14 +163,6 @@
 									<li><cite>Twisted: The Untold Story of a Royal Vizier</cite></li>
 									<li><cite>Black Friday</cite></li>
 									<li><cite>The Guy Who Didn't Like Musicals</cite></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="accordion">
-							<h4>Starkid Musicals (Continued)</h4>
-							<div>
-								<ul>
 									<li><cite>Holy Musical B@Man</cite></li>
 									<li><cite>Trail To Oregon</cite></li>
 									<li><cite>Starship</cite></li>
