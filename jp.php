@@ -72,11 +72,11 @@
 							<figure class="side-by-side">
 								<figure>
 									<img src="images/jp_music.jpg" alt="guitar_in_studio">
-				
+									<figcaption>In Studio</figcaption>
 								</figure>
 								<figure>
 									<img src="images/jp_music2.jpg" alt="guitar_on_stage">
-						
+									<figcaption>On Stage</figcaption>
 								</figure>
 							</figure>
 						</section>
@@ -108,11 +108,13 @@
 						</div>
 					</div>
 				</section>
+				
 				<section class="container">
+					<div class="Fun">
+					<div class="fav">
 					<h2>Fun facts</h2>
-					<h3>Favorite things</h3>
-					<div class="gridi Favourites">
-						<div class="first-favourite">
+					<h3>Favorite things:</h3>
+					<div class="Favourites">
 							<div class="accordion">
 								<h4>Artists</h4><div class="pannel">
 								<ul>
@@ -197,19 +199,21 @@
 					</div>
 					</div>
 				</div>
-					<section>
+					<section class="pets">
 						<h2>Pets</h2>
-						<div class="pets">
-						<div class="one">
+						<!-- <div class="pets">
+						<div class="one"> -->
+						<figure><img src="images/jp_cat.jpg" alt="jooeons_cat"></figure>
 						<p>Joo Eon has a cat. Hear all about it:</p>
-						<p>"My cat's name is Haku. She is named after the character from the film, <em>Spirited Away</em>. Story: We named our cat after Haku from the film because we thought he had blue eyes, just like our cat. Turns out he doesn't... She is a 9 year old Siamese cat, though she will be turning 10 on July 15. She's needy and is sometimes an ass (as cats typically are), but she is quite cute nonetheless."</p></div>
-					<figure><img src="images/jp_cat.jpg" alt="jooeons_cat"><figcaption>Haku, 9 years old.</figcaption></figure></div>
+						<p>"My cat's name is Haku. She is named after the character from the film, <em>Spirited Away</em>. Story: We named our cat after Haku from the film because we thought he had blue eyes, just like our cat. Turns out he doesn't... She is a 9 year old Siamese cat, though she will be turning 10 on July 15. She's needy and is sometimes an ass (as cats typically are), but she is quite cute nonetheless."</p><!-- </div> -->
+					<!-- </div> --></div>
 				</section>
 				
 			</section>
 			<aside class="container">
 				<p id="quote2"><q>The story of life is quicker than the wink of an eye, the story of love is hello and goodbye...until we meet again.</q><span> ~ Jimi Hendrix</span></p>
 			</aside>
+	
 		</article>
 	</main>
 	<footer>

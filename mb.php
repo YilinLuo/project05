@@ -96,11 +96,11 @@
 					</div>
 				</section>
 				<section class="container">
+					<div class="Fun">
+						<div class="fav">
 					<h2>Fun facts</h2>
-					<h3>Favorite things</h3>
-					<div class="gridi Favourites">
-						
-						<div class="first-favourite">
+					<h3>Favorite things:</h3>
+					<div class="Favourites">
 							<div class="accordion">
 								<h4>Animals</h4><div class="pannel">
 									<ul>
@@ -170,16 +170,14 @@
 						</div>
 					</div>
 				</div>
-					<section>
+					<section class="pets">
 						<h2>Pets</h2>
-						<div class="pets">
-						<div class="one">
+						<figure>
+								<img src="images/mbdog.jpg" alt="Michael's Dog and her name is Yoda">
+							</figure>
 						<p>Michael has one dog. Her name is yoda and she is a diva but a good floof ball.</p></div>
 			
-							<figure>
-								<img src="images/mbdog.jpg" alt="Michael's Dog and her name is Yoda">
-								<figcaption>Yoda</figcaption>
-							</figure></div>
+							</div>
 						
 					</section>
 					
@@ -212,7 +210,7 @@
 		  // }); 
 
 		  $( function() {
-		    $(".first-favourite .accordion").accordion({
+		    $(".Fun .accordion").accordion({
 	        	collapsible: true,
 	        	active: 0
 		    });
