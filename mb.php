@@ -23,7 +23,7 @@
 					<p>Here is a list of some of the courses he has taken in the computer science field in his time at U of R:</p></div>
 					<div class="classes">
 						<div class="accordion">
-							<h3>Computer Science</h3>
+							<h3 class="cs">Computer Science</h3>
 							<div class="pannel">
 								<ul>
 									<li>CSC 170</li>
@@ -197,19 +197,19 @@
 		</footer>
 		<?php include "inc/scripts.php"; ?>
 		<script>
-		  $( function() {
-		    $(".accordion").accordion({
-	        	collapsible: true,
-	        	active: false
-		    });
-		  });
+		  // $( function() {
+		  //   $(".accordion").accordion({
+	   //      	collapsible: true,
+	   //      	active: false
+		  //   });
+		  // });
 		   
-		  $( function() {
-		    $(".classes .accordion").accordion({
-	        	collapsible: true,
-	        	active: 0
-		    });
-		  }); 
+		  // $( function() {
+		  //   $(".classes .accordion").accordion({
+	   //      	collapsible: true,
+	   //      	active: 0
+		  //   });
+		  // }); 
 
 		  $( function() {
 		    $(".first-favourite .accordion").accordion({

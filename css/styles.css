@@ -172,6 +172,10 @@ footer {
 	grid-row: 1;
 }
 
+.classes .accordion .cs:hover{
+	color: #1F5A94;
+}
+
 .Academics h3{
 	background-color: #e9eaea;
 	padding: 10px 0px 10px 15px;
