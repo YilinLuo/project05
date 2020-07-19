@@ -8,6 +8,7 @@
 html {
     margin:0 auto;
     padding:0;
+
     width: 100%;
 	height: 100%;
 }
@@ -27,6 +28,8 @@ body{
 
 
 section {
+	/*border: 1px solid white;*/
+
 	border-collapse: collapse;
 }
 
@@ -35,15 +38,24 @@ a{
 }
 
 a:hover{
-	color: #364F6B;
+	color: #cf1578;
+/*	transition: 2s;*/
+
 	text-decoration: none;
 }
+/*a:hover:before{
+	content: "<";
+}
+a:hover:after{
+	content: ">";
+}*/
 
-
-
-.upper-left .semester{
+.upper-left .number-semester {
+	/*width: fit-content;	*/
+}
+.upper-left .number-semester .semester{
 	font-size: 30px;
-
+	/*float: right;*/
 }
 .upper-left .class-number{
     font-size: 150px;
@@ -75,11 +87,14 @@ a:hover{
 
 
 .middle .welcome{
+	font-style: italic;
 	font-size: 200px;
 	letter-spacing: 2px;
 	color: #e8d21d;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0.1em;
+
+	text-align: center;
 }
 @media (max-width: 1600px){
 	.middle .welcome{
@@ -157,8 +172,9 @@ body{
 }
 .upper-left .number-semester .semester{
 	position: relative;
-	left: 46.8%;
-    top: 40px;
+	left: 66%;
+    /*top: 40px;
+    left: 67%;*/
 }
 @media (max-width: 1600px){
 	.upper-left .number-semester .semester{
@@ -188,13 +204,13 @@ body{
 
 /*middle - layout*/
 .middle{
-	grid-column: 2 / 3;
+	grid-column: 1 / 4;
 	grid-row: 2 / 3;
 }
 .middle .welcome{
 	position: relative;
-	top: 5%;
-    left: -30%;
+	/*top: 5%;
+    left: -25%;*/
 }
 
 
@@ -225,7 +241,7 @@ body{
  /* ------------------------------------------------------------------ 
  module
  ------------------------------------------------------------------ */
- @media screen and (max-width:967px){
+/* @media screen and (max-width:967px){
         .section{
             display:block;
         }
@@ -238,7 +254,7 @@ body{
             display:block;
         }
     }
-
+*/
 
  /* ------------------------------------------------------------------ 
  state
