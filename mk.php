@@ -120,56 +120,54 @@
 			<div class="gridi Favourites">
 				<div class="first-favourite">
 					<div class="accordion">
-						<h4>Animals</h4>
+						<h4>Animals</h4><div class="pannel">
 							<ul>
 								<li>Rabbits</li>
 								<li>Cats</li>
 								<li>Otters</li>
 							</ul>
 					</div>
-				</div>
-				<div class="accordion">
-					<h4>Books</h4>
+
+					<h4>Books</h4><div class="pannel">
 						<ul>
 							<li>Anna Karenina</li>
 							<li>Ashes in the Snow</li>
 							<li>What the Night Sings</li>
 						</ul>
 				</div>
-				<div class="accordion">
-					<h4>Colors</h4>
+					<h4>Colors</h4><div class="pannel">
 						<ul>
 							<li>Yellow</li>
 							<li>Purple</li>
 							<li>Peach</li>
 						</ul>
 				</div>
-				<div class="accordion">
-					<h4>Figure Skaters</h4>
+	
+					<h4>Figure Skaters</h4><div class="pannel">
 						<ul>
 							<li>Evgenia Medvedeva</li>
 							<li>Alena Kostornaia</li>
 							<li>Gracie Gold</li>
 						</ul>
 				</div>
-				<div class="accordion">
-					<h4>Movies</h4>
+
+					<h4>Movies</h4><div class="pannel">
 						<ul>
 							<li>Dead Poets Society</li>
 							<li>The Spongebob Squarepants Movie</li>
 							<li>Christopher Robin</li>
 						</ul>
 				</div>
-				<div class="accordion">
-					<h4>Musicals</h4>
+
+					<h4>Musicals</h4><div class="pannel">
 						<ul>
 							<li>Hamilton</li>
 							<li>Dear Evan Hansen</li>
 							<li>The Spongebob Squarepants Musical</li>
 						</ul>
 				</div>
-				<div class="accordion">
-					<h4>Musicians</h4>
+
+					<h4>Musicians</h4><div class="pannel">
 						<ul>
 							<li>Ben Platt</li>
 							<li>Vince Guaraldi</li>
@@ -177,8 +175,8 @@
 						</ul>
 				</div>
 				
-				<div class="accordion">
-					<h4>TV Shows</h4>
+
+					<h4>TV Shows</h4><div class="pannel">
 						<ul>
 							<li>Andi Mack</li>
 							<li>Spongebob Squarepants</li>
@@ -186,6 +184,9 @@
 						</ul>
 				</div>
 		</div>
+	</div>
+</div>
+
 			<h2>Pets</h2>
 			<div class="pets">
 				<div class="one">

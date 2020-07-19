@@ -114,17 +114,16 @@
 					<div class="gridi Favourites">
 						<div class="first-favourite">
 							<div class="accordion">
-								<h4>Artists</h4>
+								<h4>Artists</h4><div class="pannel">
 								<ul>
 									<li>M.C. Escher</li>
 									<li>Bernard Buffet</li>
 									<li>Banksy</li>
 								</ul>
 							</div>
-						</div>
+						
 
-						<div class="accordion">
-							<h4>Bands</h4>
+							<h4>Bands</h4><div class="pannel">
 							<ul>
 								<li>Hyukoh</li>
 								<li>Led Zeppelin</li>
@@ -132,8 +131,8 @@
 							</ul>
 						</div>
 
-						<div class="accordion">
-							<h4>Colors</h4>
+						
+							<h4>Colors</h4><div class="pannel">
 							<ul>
 								<li>Black</li>
 								<li>Green</li>
@@ -141,8 +140,8 @@
 							</ul>
 						</div>
 
-						<div class="accordion">
-							<h4>Countries to visit</h4>
+						
+							<h4>Countries to visit</h4><div class="pannel">
 							<ul>
 								<li>France</li>
 								<li>Japan</li>
@@ -150,8 +149,9 @@
 							</ul>
 						</div>
 
-						<div class="accordion">
-							<h4>Cuisine</h4>
+						
+							<h4>Cuisine</h4><div class="pannel">
+
 							<ul>
 								<li>Indian Food</li>
 								<li>Italian Food</li>
@@ -159,8 +159,9 @@
 							</ul>
 						</div>
 
-						<div class="accordion">
-							<h4>Documentaries</h4>
+					
+							<h4>Documentaries</h4><div class="pannel">
+
 							<ul>
 								<li>Planet Earth</li>
 								<li>Don't F**k With Cats</li>
@@ -168,8 +169,8 @@
 							</ul>
 						</div>
 
-						<div class="accordion">
-							<h4>Musicians</h4>
+							<h4>Musicians</h4><div class="pannel">
+
 							<ul>
 								<li>Jimi Hendrix</li>
 								<li>John Frusciante</li>
@@ -177,8 +178,7 @@
 							</ul>
 						</div>
 
-						<div class="accordion">
-							<h4>Snacks</h4>
+							<h4>Snacks</h4><div class="pannel">
 							<ul>
 								<li>Cheetos</li>
 								<li>Oreos</li>
@@ -186,8 +186,8 @@
 							</ul>
 						</div>
 						
-						<div class="accordion">
-							<h4>Video Games</h4>
+						
+							<h4>Video Games</h4><div class="pannel">
 							<ul>
 								<li>Mario Kart</li>
 								<li>League of Legends</li>
@@ -195,6 +195,8 @@
 							</ul>
 						</div>
 					</div>
+					</div>
+				</div>
 					<section>
 						<h2>Pets</h2>
 						<div class="pets">
