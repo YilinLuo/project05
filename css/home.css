@@ -8,7 +8,6 @@
 html {
     margin:0 auto;
     padding:0;
-
     width: 100%;
 	height: 100%;
 }
@@ -28,8 +27,6 @@ body{
 
 
 section {
-	/*border: 1px solid white;*/
-
 	border-collapse: collapse;
 }
 
@@ -39,16 +36,9 @@ a{
 
 a:hover{
 	color: #364F6B;
-/*	transition: 2s;*/
-
 	text-decoration: none;
 }
-/*a:hover:before{
-	content: "<";
-}
-a:hover:after{
-	content: ">";
-}*/
+
 
 
 .upper-left .semester{
