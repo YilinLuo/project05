@@ -50,10 +50,12 @@ a:hover:after{
 	content: ">";
 }*/
 
-
-.upper-left .semester{
+.upper-left .number-semester {
+	/*width: fit-content;	*/
+}
+.upper-left .number-semester .semester{
 	font-size: 30px;
-
+	/*float: right;*/
 }
 .upper-left .class-number{
     font-size: 150px;
@@ -91,6 +93,8 @@ a:hover:after{
 	color: #e8d21d;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0.1em;
+
+	text-align: center;
 }
 @media (max-width: 1600px){
 	.middle .welcome{
@@ -168,8 +172,9 @@ body{
 }
 .upper-left .number-semester .semester{
 	position: relative;
-	left: 46.8%;
-    top: 40px;
+	left: 66%;
+    /*top: 40px;
+    left: 67%;*/
 }
 @media (max-width: 1600px){
 	.upper-left .number-semester .semester{
@@ -199,13 +204,13 @@ body{
 
 /*middle - layout*/
 .middle{
-	grid-column: 2 / 3;
+	grid-column: 1 / 4;
 	grid-row: 2 / 3;
 }
 .middle .welcome{
 	position: relative;
-	top: 5%;
-    left: -25%;
+	/*top: 5%;
+    left: -25%;*/
 }
 
 
@@ -236,7 +241,7 @@ body{
  /* ------------------------------------------------------------------ 
  module
  ------------------------------------------------------------------ */
- @media screen and (max-width:967px){
+/* @media screen and (max-width:967px){
         .section{
             display:block;
         }
@@ -249,7 +254,7 @@ body{
             display:block;
         }
     }
-
+*/
 
  /* ------------------------------------------------------------------ 
  state
