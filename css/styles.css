@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /*******************************BASE STYLES*************************************/
 
 body {
 	background: #FFFFFF;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	line-height homebtn: 2.2em;
 	margin: 0px;
+	background-image: url(../images/bg_swoosh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -19,11 +23,11 @@ body {
 
 h1 {
 	color: #cf1578;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 h2{
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	color: #cf1578;
 	font-weight : bold;
 	padding-bottom: 0px;
@@ -32,25 +36,24 @@ h2{
 
 h3 {
 	margin-bottom : 0px;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 h4 {
 	color: #000000;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 
 a {
 	font-weight: 600;
 	font-size: 1.1em;
-
-	color: #12a4d9;
+	color: #1F5A94;
 	text-decoration : none;
 }
 
 a:hover {
-	color: #cf1578;
+	color: #12a4d9;
 }
 
 
@@ -67,7 +70,6 @@ figcaption{
 
 span{
 	font-size: 25px;
-	color:#cf1578;
 }
 
 
@@ -176,11 +178,11 @@ footer {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	border-bottom: 0.5px solid slategrey;
-	color: #027f98;
+	color: #1F5A94;
 }
 
 .Academics h3:hover{
-  color: #cf1578;
+ 	color: #12a4d9;
 }
 
 .Favourites h4{
@@ -189,7 +191,7 @@ footer {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	border-bottom: 0.5px solid slategrey;
-	color: #027f98;
+	color: #1F5A94;
 }
 
 
@@ -243,7 +245,8 @@ main header {
 	font-size: 40px;
 	padding-top: 5px;
 	color: #e8d21d;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 2px;
 }
 
 .homebtn{
@@ -255,11 +258,12 @@ main header {
     text-align: center;
     font-size: 22px;
 }
+
 .homebtn a{
 	width: 100%;
     height: 100%;
     display: block;
-
+	color: #12a4d9;
     padding-top: 15px;
 
     background-image: url(../images/go-back.png);
@@ -267,14 +271,18 @@ main header {
     background-position: 10px 18px;
 }
 
+.homebtn a:hover{
+	color: #1F5A94;
+}
+
 .name{
 	color: #e8d21d;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	padding-top: 0px;
 }
 
 .accordion h4:hover{
-	color: #cf1578;
+	color: #12a4d9;
 }
 
  @media screen and (max-width:967px){

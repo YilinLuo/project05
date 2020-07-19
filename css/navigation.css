@@ -19,13 +19,13 @@
 	font-size: 20px;
 	display: block;
 	justify-content: center;
-	color: #12a4d9;
+	color: #1F5A94;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
 .menu a:hover {
-	color: mediumvioletred;
+	color: #12a4d9;
 }
 .menu .menu-home{
 	background: url(../images/go-back.png);

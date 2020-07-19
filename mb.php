@@ -102,96 +102,65 @@
 						
 						<div class="first-favourite">
 							<div class="accordion">
-								<h4>Animals</h4>
-								<div>
+								<h4>Animals</h4><div class="pannel">
 									<ul>
 										<li>Dogs</li>
 										<li>Dolphins</li>
 										<li>Apes</li>
 									</ul>
 								</div>
-							</div>
-						</div>
-						<div class="accordion">
-							<h4>Colors</h4>
-							<div>
+							<h4>Colors</h4><div class="pannel">
 								<ul>
 									<li>Blue</li>
 									<li>Magenta</li>
 									<li>Purple</li>
 								</ul>
 							</div>
-						</div>
 						
-						<div class="accordion">
-							<h4>Dream Roles</h4>
-							<div>
+							<h4>Dream Roles</h4><div class="pannel">
 								<ul>
 									<li>Charlemange from <cite>Pippin</cite></li>
 									<li>Hades from <cite>Hadestown</cite></li>
 									<li>Sweet Tooth from <cite>Holy Musical B@Man</cite></li>
 								</ul>
 							</div>
-						</div>
 
-						<div class="accordion">
-							<h4>Musicals</h4>
-							<div>
+							<h4>Musicals</h4><div class="pannel">
 								<ol>
 									<li><cite>Pippin</cite> by Stephen Schwartz</li>
 									<li><cite>Hadestown</cite> by Anaïs Mitchell</li>
 									<li><cite>Groundhog Day</cite> by Tim Minchin</li>
 								</ol>
 							</div>
-						</div>
 						
-						<div class="accordion">
-							<h4>Musicians</h4>
-							<div>
+							<h4>Musicians</h4><div class="pannel">
 								<ul>
 									<li>Crosby, Stills, & Nash, (& Young)</li>
 									<li>The Who</li>
 									<li>Tim Minchin</li>
 								</ul>
 							</div>
-						</div>
 						
-						<div class="accordion">
-							<h4>Starkid Musicals</h4>
-							<div>
+							<h4>Starkid Musicals</h4><div class="pannel">
 								<ul>
 									<li><cite>Twisted: The Untold Story of a Royal Vizier</cite></li>
 									<li><cite>Black Friday</cite></li>
 									<li><cite>The Guy Who Didn't Like Musicals</cite></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="accordion">
-							<h4>Starkid Musicals (Continued)</h4>
-							<div>
-								<ul>
 									<li><cite>Holy Musical B@Man</cite></li>
 									<li><cite>Trail To Oregon</cite></li>
 									<li><cite>Starship</cite></li>
 								</ul>
-							</div>
 						</div>
 						
-						<div class="accordion">
-							<h4>TV/Web Shows</h4>
-							<div>
+							<h4>TV/Web Shows</h4><div class="pannel">
 								<ul>
 									<li><cite>Doctor Who</cite></li>
 									<li><cite>Platoon of Power Squadron</cite></li>
 									<li><cite>Edgar Allan Poe's Murder Mystery Invite Only Casual Dinner Party / Gala For Friends Potluck</cite></li>
 								</ul>
-							</div>
 						</div>
 						
-						<div class="accordion">
-							<h4>Video Games</h4>
-							<div>
+							<h4>Video Games</h4><div class="pannel">
 								<ul>
 									<li>FTL: Faster than Light</li>
 									<li>Planet Coaster</li>
@@ -200,6 +169,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 					<section>
 						<h2>Pets</h2>
 						<div class="pets">
