@@ -19,7 +19,7 @@
 
 				<h2>Academics</h2><div class="Academics"><div class="ac">
 				<p>Molly Kilian is a rising sophomore at the University of Rochester, interested in a wide variety of subjects. She is planning to major in some form of humanities or social science, and to minor in Computer Science and/or Digital Media Studies.</p>
-				<p>She has taken the following classes in her time at U of R:</p></div>
+				<p>Here are some of the courses he has taken in his time at the University of Rochester:</p></div>
 				<div class="classes">
 				<div class="accordion">
 				
@@ -115,11 +115,12 @@
 				</div>
 			</section>	
 	<section class="interests container">
+		<div class="Fun">
+			<div class="fav">
 		<h2>Fun facts</h2>
 			<h3>Favorite things:</h3>
-			<div class="gridi Favourites">
-				<div class="first-favourite">
-					<div class="accordion">
+			<div class="Favourites">
+				<div class="accordion">
 						<h4>Animals</h4><div class="pannel">
 							<ul>
 								<li>Rabbits</li>
@@ -186,16 +187,14 @@
 		</div>
 	</div>
 </div>
-
-			<h2>Pets</h2>
 			<div class="pets">
-				<div class="one">
-				<p>Molly has two cats, named Mango and Rosamond.</p>
-				<p>Mango is a fluffy orange cat, whose name Molly did not choose but fits perfectly. He is outgoing and affectionate. He is 6 years old. Rosamond is a calico cat, who enjoys taking naps and looking out the windows at birds. She is 16 years old.</p></div>
+			<h2>Pets</h2>
 				<figure>
 					<img src="images/mkcats.jpg" alt="Cats">
-					<figcaption>Mango and Rosamond</figcaption>
-				</figure></div>
+				</figure>
+				<p>Molly has two cats, named Mango and Rosamond.</p>
+				<p>Mango is a fluffy orange cat, whose name Molly did not choose but fits perfectly. He is outgoing and affectionate. He is 6 years old. Rosamond is a calico cat, who enjoys taking naps and looking out the windows at birds. She is 16 years old.</p></div>
+				</div>
 			
 	</section>
 	</article>

@@ -20,10 +20,10 @@
 				<section class="container">
 					<h2>Academics</h2><div class="Academics"><div class="ac">
 					<p>Michael is a student at the University of Rochester, majoring in Computer Science, minoring in Linguistics, and clustering in Gender, Sexuality, and Women's Studies.</p>
-					<p>Here is a list of some of the courses he has taken in the computer science field in his time at U of R:</p></div>
+					<p>Here are some of the courses he has taken in his time at the University of Rochester:</p></div>
 					<div class="classes">
 						<div class="accordion">
-							<h3>Computer Science</h3>
+							<h3 class="cs">Computer Science</h3>
 							<div class="pannel">
 								<ul>
 									<li>CSC 170</li>
@@ -96,11 +96,11 @@
 					</div>
 				</section>
 				<section class="container">
+					<div class="Fun">
+						<div class="fav">
 					<h2>Fun facts</h2>
-					<h3>Favorite things</h3>
-					<div class="gridi Favourites">
-						
-						<div class="first-favourite">
+					<h3>Favorite things:</h3>
+					<div class="Favourites">
 							<div class="accordion">
 								<h4>Animals</h4><div class="pannel">
 									<ul>
@@ -170,16 +170,14 @@
 						</div>
 					</div>
 				</div>
-					<section>
+					<section class="pets">
 						<h2>Pets</h2>
-						<div class="pets">
-						<div class="one">
+						<figure>
+								<img src="images/mbdog.jpg" alt="Michael's Dog and her name is Yoda">
+							</figure>
 						<p>Michael has one dog. Her name is yoda and she is a diva but a good floof ball.</p></div>
 			
-							<figure>
-								<img src="images/mbdog.jpg" alt="Michael's Dog and her name is Yoda">
-								<figcaption>Yoda</figcaption>
-							</figure></div>
+							</div>
 						
 					</section>
 					
@@ -197,22 +195,22 @@
 		</footer>
 		<?php include "inc/scripts.php"; ?>
 		<script>
-		  $( function() {
-		    $(".accordion").accordion({
-	        	collapsible: true,
-	        	active: false
-		    });
-		  });
+		  // $( function() {
+		  //   $(".accordion").accordion({
+	   //      	collapsible: true,
+	   //      	active: false
+		  //   });
+		  // });
 		   
-		  $( function() {
-		    $(".classes .accordion").accordion({
-	        	collapsible: true,
-	        	active: 0
-		    });
-		  }); 
+		  // $( function() {
+		  //   $(".classes .accordion").accordion({
+	   //      	collapsible: true,
+	   //      	active: 0
+		  //   });
+		  // }); 
 
 		  $( function() {
-		    $(".first-favourite .accordion").accordion({
+		    $(".Fun .accordion").accordion({
 	        	collapsible: true,
 	        	active: 0
 		    });

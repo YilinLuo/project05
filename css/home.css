@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 /* ------------------------------------------------------------------ 
  Base
  ------------------------------------------------------------------ */
@@ -8,7 +13,6 @@
 html {
     margin:0 auto;
     padding:0;
-
     width: 100%;
 	height: 100%;
 }
@@ -16,10 +20,10 @@ html {
 body{
 	margin: 0;
 
-	font-family: 'Bebas Neue', cursive;
-	color: #d9d9d9;
+	font-family: 'Nunito', cursive;
+	color: #878787;
 
-	background-color: #322e2f;
+	background-image: url(../images/bg3.png);
 	background-size: 100% 100%;
 
 	width: 100%;
@@ -32,13 +36,17 @@ section {
 }
 
 a{
-	color: #12a4d9;
+
+	color: #1F5A94;
+
 	text-decoration: none;
 }
 
 a:hover{
-	color: #14C0FF;
+
+	color: #12a4d9;
 	text-decoration: underline;
+/*	transition: 2s;*/
 }
 
 
@@ -49,8 +57,8 @@ a:hover{
 	font-size: 30px;
 }
 .upper-left .class-number{
-    font-size: 150px;
-    letter-spacing: 10px;
+    font-size: 60px;
+    letter-spacing: 2px;
 }
 .upper-left .class-number:before{
 	content: "2020 SUMMER";
@@ -71,7 +79,7 @@ a:hover{
 
 .upper-right .login-container{
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	width: 90%;
 }
 .upper-right a{
@@ -87,8 +95,8 @@ a:hover{
 	font-style: italic;
 	font-size: 200px;
 	letter-spacing: 2px;
-	color: #e8d21d;
-	font-family: 'Raleway', sans-serif;
+	color: #cf1578;
+	font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.1em;
 
 	text-align: center;
@@ -98,7 +106,7 @@ a:hover{
 
 
 .bottom-left .name-reference{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	text-align: center;
 }
 .bottom-left .class-name{
@@ -125,7 +133,7 @@ a:hover{
 }
 .bottom-right .team-reference{
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito', sans-serif;
 
 	width: 90%;
 
@@ -163,8 +171,10 @@ body{
 }
 .upper-left .number-semester .semester{
 	position: relative;
+    /*top: 40px;
+    left: 67%;*/
+}
 
-}	
 .upper-left img{
 	position: absolute;
 	left: 2%;
