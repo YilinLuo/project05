@@ -18,3 +18,6 @@ Adira Blumenthal, Yilin Luo, Bo Wu
 - Got rid of grayscale to color effect on hover (Contrast)
 - Added a background image (Contrast)
 - Centered the footer and made it always visible (Alignment)
+- In the page "secondary", changed the placement of introductions from two rows with unequal number of teammates 
+  into one column that has aligned sections of indivisual introductions (Alignment)
+- shrunk the size of quotes on individual pages so that they blend in better with the rest of the content (Contrast)
