@@ -20,7 +20,7 @@
 	display: block;
 	justify-content: center;
 	color: #1F5A94;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
@@ -30,7 +30,7 @@
 .menu .menu-home{
 	background: url(../images/go-back.png);
 	background-repeat: no-repeat;
-	background-position: 13px 5px;
+	background-position: 9px 8px;
 	
 	display: block;
     width: 94px;
