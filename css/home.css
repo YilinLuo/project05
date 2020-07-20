@@ -51,13 +51,13 @@ a:hover{
 
 
 .upper-left .number-semester {
-	width: 160%;	
+	width: 180%;	
 }
 .upper-left .number-semester .semester{
 	font-size: 30px;
 }
 .upper-left .class-number{
-    font-size: 60px;
+    font-size: 100px;
     letter-spacing: 2px;
 }
 .upper-left .class-number:before{
@@ -66,8 +66,8 @@ a:hover{
     display: block;
 
 	position: relative;
-    left: 295px;
-    top: 40px;
+    left: 205px;
+    top: 35px;
     
     letter-spacing: normal;
 }
@@ -166,7 +166,7 @@ body{
 }
 .upper-left .number-semester{
 	position: relative;
-	left: 32.5%;
+	left: 35.5%;
     top: 27.2%;
 }
 .upper-left .number-semester .semester{
@@ -177,8 +177,8 @@ body{
 
 .upper-left img{
 	position: absolute;
-	left: 2%;
-    top: 0px;
+	left: 6.1%;
+    top: 7%;
 }
 
 
@@ -253,64 +253,80 @@ body{
 		background: none;
 	}
 }
+/**/
 
 
 /*   1600px   */
 @media (max-width: 1600px){
 	.upper-left .class-number{
-	    font-size: 115px;
+	    font-size: 90px;
 	    letter-spacing: 10px;
 	}
 	.middle .welcome{
 	    font-size: 170px;
 	    letter-spacing: 2px;
 	}
-	.upper-left .number-semester .semester{
-    	top: 30px;
-	}
-
 	.upper-left .class-number::before {
 		left: 209px;
     	top: 33px;
 	}
+	.upper-left img {
+	    position: absolute;
+	    left: 5.1%;
+    	top: 6%;
+	}
 }	
+/**/
+
+/*   1400px   */
+@media (max-width: 1400px){
+	.upper-left img {
+		display: none;
+	}
+}
 
 /*   850px   */
-@media (max-width: 850px){
+@media (max-width: 900px){
+	.upper-left .number-semester{
+		left: 15.5%;
+    	top: 34.2%;
+	}
 	.upper-left .class-number{
-	    font-size: 100px;
+	    font-size: 80px;
 	    letter-spacing: 10px;
 	}
 	.middle .welcome{
 	    font-size: 140px;
 	    letter-spacing: 2px;
 	}
-	.upper-left .number-semester .semester{
-    	top: 30px;
-	}
-
 	.upper-left .class-number::before {
-		left: 174px;
-    	top: 33px;
+		left: 190px;
+    	top: 29px;
+    	font-size: 27px;
 	}
 }
+/**/
+
+
 
 /*   750px   */
 @media (max-width: 750px){
+	.upper-left .number-semester{
+		left: 15.5%;
+    	top: 38.2%;
+	}
 	.upper-left .class-number{
-	    font-size: 85px;
+	    font-size: 70px;
 	    letter-spacing: 10px;
 	}
 	.middle .welcome{
 	    font-size: 125px;
 	    letter-spacing: 2px;
 	}
-	.upper-left .number-semester .semester{
-    	top: 30px;
-	}
 	.upper-left .class-number::before {
-		left: 138px;
-    	top: 28px;
+		left: 162px;
+    	top: 25px;
+    	font-size: 25px;
 	}
 	.bottom-left .class-name{
 		font-size: 25px;
@@ -321,55 +337,52 @@ body{
 	.bottom-right .team-reference a{
 		font-size: 40px;
 	}
+	.bottom-left .name-reference {
+	    position: relative;
+	    top: 15.6%;
+	    left: 11.7%;
+	}
 }
+/**/
 
-/*   650px   */
-@media (max-width: 630px){
+
+
+/*   660px   */
+@media (max-width: 660px){
 	.upper-left .class-number{
-	    font-size: 85px;
-	    letter-spacing: 10px;
+	    font-size: 60px;
 	}
 	.middle .welcome{
 	    font-size: 110px;
 	    letter-spacing: 2px;
 	}
-	.upper-left .number-semester .semester{
-    	top: 30px;
-	}
 	.upper-left .class-number::before {
 		left: 138px;
-    	top: 28px;
+    	top: 23px;
+    	font-size: 23px;
 	}
-	.bottom-left .class-name{
-		font-size: 25px;
-	}
-	.upper-right a{
-		font-size: 50px;
-	}
-	.bottom-right .team-reference a{
-		font-size: 40px;
-	}
-}
 
+}
+/**/
+
+
+
+
+/*  580px  */
 @media (max-width: 580px){
 	.upper-left .class-number{
-	    font-size: 70px;
-	    letter-spacing: 10px;
-	}
-	.middle .welcome{
-	    font-size: 100px;
-	    letter-spacing: 2px;
-	}
-	.upper-left .number-semester .semester{
-    	top: 30px;
+	    font-size: 48px;
 	}
 	.upper-left .class-number::before {
-		left: 122px;
-    	top: 23px;
-    	font-size: 25px;
+		left: 126px;
+    	top: 18px;
+    	font-size: 18px;
+	}
+	.middle .welcome{
+	    font-size: 95px;
 	}
 	.bottom-left .name-reference{
-		top: 13.6%;
+		top: 0%;
 	}
 	.bottom-left .class-name{
 		font-size: 25px;
@@ -381,6 +394,32 @@ body{
 		font-size: 30px;
 	}
 }
+
+
+/*  500px  */
+@media (max-width: 500px){
+	.upper-left .number-semester {
+	    left: 12.5%;
+    	top: 42.2%;
+	}
+	.upper-left .class-number{
+	    font-size: 41px;
+	}
+	.upper-left .class-number::before {
+		left: 111px;
+    	top: 12px;
+    	font-size: 16px;
+	}
+	.middle .welcome{
+	    font-size: 85px;
+	}
+	.bottom-left .name-reference{
+		top: -6.8%;
+	}
+}
+
+
+
 
  /* ------------------------------------------------------------------ 
  module
