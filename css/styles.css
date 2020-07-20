@@ -173,6 +173,10 @@ footer {
 
 /************************************MODULES***********************************/
 
+.description{
+	text-shadow: 1.2px 1.2px white;
+}
+
 .grid figure{
 	margin-left: 0px; /*align img and heading on the same vertical line*/
 }
