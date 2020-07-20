@@ -5,7 +5,7 @@
 	<section class="upper-left">
 		<img src="images/logo.png" alt="csc 174">
 		<div class="number-semester">
-			<div class="semester">2020 Summer</div>
+			<!-- <div class="semester">2020 Summer</div> -->
 			<div class="class-number">CSC 174</div>
 		</div>
 	</section>

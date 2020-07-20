@@ -28,48 +28,45 @@ body{
 
 
 section {
-	/*border: 1px solid white;*/
-
 	border-collapse: collapse;
 }
 
 a{
 	color: #12a4d9;
+	text-decoration: none;
 }
 
 a:hover{
-	color: #cf1578;
-/*	transition: 2s;*/
+	color: #14C0FF;
+	text-decoration: underline;
+}
 
-	text-decoration: none;
-}
-/*a:hover:before{
-	content: "<";
-}
-a:hover:after{
-	content: ">";
-}*/
 
 .upper-left .number-semester {
-	/*width: fit-content;	*/
+	width: 160%;	
 }
 .upper-left .number-semester .semester{
 	font-size: 30px;
-	/*float: right;*/
 }
 .upper-left .class-number{
     font-size: 150px;
     letter-spacing: 10px;
 }
+.upper-left .class-number:before{
+	content: "2020 SUMMER";
+    font-size: 30px;
+    display: block;
+
+	position: relative;
+    left: 295px;
+    top: 40px;
+    
+    letter-spacing: normal;
+}
 .upper-left img{
 	transform:rotate(-7deg);
 }
-@media (max-width: 1600px){
-	.upper-left .class-number{
-	    font-size: 115px;
-	    letter-spacing: 10px;
-	}
-}	
+
 
 
 .upper-right .login-container{
@@ -95,12 +92,8 @@ a:hover:after{
 	letter-spacing: 0.1em;
 
 	text-align: center;
-}
-@media (max-width: 1600px){
-	.middle .welcome{
-	    font-size: 170px;
-	    letter-spacing: 2px;
-	}
+
+	width: 98%;
 }
 
 
@@ -109,7 +102,6 @@ a:hover:after{
 	text-align: center;
 }
 .bottom-left .class-name{
-	width: 109%;
 	font-size: 30px;
 
 	margin-bottom: 10px;
@@ -144,11 +136,7 @@ a:hover:after{
 .bottom-right .team-reference a{
 	display: block;
 }
-@media (max-width: 1800px){
-	.bottom-left .img-reference, .bottom-right .team-reference{
-		background: none;
-	}
-}
+
 
 /* ------------------------------------------------------------------ 
  layout
@@ -161,31 +149,30 @@ body{
   	grid-template-rows: repeat(3, 33.33%);
 }
 
+
+
+
 /*upper-left  - layout*/
 .upper-left{
 	grid-column: 1 / 2;
 }
 .upper-left .number-semester{
 	position: relative;
-	left: 200px;
-    top: 75px;
+	left: 32.5%;
+    top: 27.2%;
 }
 .upper-left .number-semester .semester{
 	position: relative;
-	left: 66%;
-    /*top: 40px;
-    left: 67%;*/
-}
-@media (max-width: 1600px){
-	.upper-left .number-semester .semester{
-    	top: 30px;
-	}
+
 }	
 .upper-left img{
 	position: absolute;
 	left: 2%;
     top: 0px;
 }
+
+
+
 
 
 /*upper-right  - layout*/
@@ -202,6 +189,9 @@ body{
 }
 
 
+
+
+
 /*middle - layout*/
 .middle{
 	grid-column: 1 / 4;
@@ -209,9 +199,11 @@ body{
 }
 .middle .welcome{
 	position: relative;
-	/*top: 5%;
-    left: -25%;*/
+
 }
+
+
+
 
 
 /*bottom-left - layout*/
@@ -224,6 +216,9 @@ body{
 	top: 25.6%;
     left: 11.7%;
 }
+
+
+
 
 
 /*bottom-right - layout*/
@@ -239,22 +234,147 @@ body{
 
 
  /* ------------------------------------------------------------------ 
+ media query
+ ------------------------------------------------------------------ */
+
+/*   1900px   */
+@media (max-width: 1900px){
+	.bottom-left .img-reference, .bottom-right .team-reference{
+		background: none;
+	}
+}
+
+
+/*   1600px   */
+@media (max-width: 1600px){
+	.upper-left .class-number{
+	    font-size: 115px;
+	    letter-spacing: 10px;
+	}
+	.middle .welcome{
+	    font-size: 170px;
+	    letter-spacing: 2px;
+	}
+	.upper-left .number-semester .semester{
+    	top: 30px;
+	}
+
+	.upper-left .class-number::before {
+		left: 209px;
+    	top: 33px;
+	}
+}	
+
+/*   850px   */
+@media (max-width: 850px){
+	.upper-left .class-number{
+	    font-size: 100px;
+	    letter-spacing: 10px;
+	}
+	.middle .welcome{
+	    font-size: 140px;
+	    letter-spacing: 2px;
+	}
+	.upper-left .number-semester .semester{
+    	top: 30px;
+	}
+
+	.upper-left .class-number::before {
+		left: 174px;
+    	top: 33px;
+	}
+}
+
+/*   750px   */
+@media (max-width: 750px){
+	.upper-left .class-number{
+	    font-size: 85px;
+	    letter-spacing: 10px;
+	}
+	.middle .welcome{
+	    font-size: 125px;
+	    letter-spacing: 2px;
+	}
+	.upper-left .number-semester .semester{
+    	top: 30px;
+	}
+	.upper-left .class-number::before {
+		left: 138px;
+    	top: 28px;
+	}
+	.bottom-left .class-name{
+		font-size: 25px;
+	}
+	.upper-right a{
+		font-size: 50px;
+	}
+	.bottom-right .team-reference a{
+		font-size: 40px;
+	}
+}
+
+/*   650px   */
+@media (max-width: 630px){
+	.upper-left .class-number{
+	    font-size: 85px;
+	    letter-spacing: 10px;
+	}
+	.middle .welcome{
+	    font-size: 110px;
+	    letter-spacing: 2px;
+	}
+	.upper-left .number-semester .semester{
+    	top: 30px;
+	}
+	.upper-left .class-number::before {
+		left: 138px;
+    	top: 28px;
+	}
+	.bottom-left .class-name{
+		font-size: 25px;
+	}
+	.upper-right a{
+		font-size: 50px;
+	}
+	.bottom-right .team-reference a{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 580px){
+	.upper-left .class-number{
+	    font-size: 70px;
+	    letter-spacing: 10px;
+	}
+	.middle .welcome{
+	    font-size: 100px;
+	    letter-spacing: 2px;
+	}
+	.upper-left .number-semester .semester{
+    	top: 30px;
+	}
+	.upper-left .class-number::before {
+		left: 122px;
+    	top: 23px;
+    	font-size: 25px;
+	}
+	.bottom-left .name-reference{
+		top: 13.6%;
+	}
+	.bottom-left .class-name{
+		font-size: 25px;
+	}
+	.upper-right a{
+		font-size: 40px;
+	}
+	.bottom-right .team-reference a{
+		font-size: 30px;
+	}
+}
+
+ /* ------------------------------------------------------------------ 
  module
  ------------------------------------------------------------------ */
-/* @media screen and (max-width:967px){
-        .section{
-            display:block;
-        }
-
-        html{
- 		  display:block;
- 	}
-     
-        body{
-            display:block;
-        }
-    }
-*/
 
  /* ------------------------------------------------------------------ 
  state
