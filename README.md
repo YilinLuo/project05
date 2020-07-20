@@ -1,17 +1,20 @@
-# project2
+# Project 3
 
 London
 
-Michael Bashner, Molly Kilian, Joo Eon Park
+Adira Blumenthal, Yilin Luo, Bo Wu
 
-Classes and relationships:
--Academics: majors, minor, clusters
--Interests: the arts (one visual, one auditory = music)
--Activities: on campus, off campus
--Fun facts: favorite things, pets, skills)
--A quote
--Link to the original lab
-
-Choreography:
--The navigation is sorted alphabetically by our last names.
--We sorted by category on our sidepages, and sorted them by relevance. For example, interests is before fun facts because it is more relevant. On each of our subpages, we sorted our form of visual art (theater, figure skating, art) before our auditory art (music). Why? To make each subpage more interesting. We all participate in music, so we put our other form of art first.
+## Changes:
+- Changed color scheme from magenta, purple, and black to magenta, black, blue and a bit of yellow (Contrast)
+- Got rid of unnecessary headings (Repetition)
+- Increased font size (Contrast)
+- Got rid of indent before headings (Alignment)
+- Got rid of extra large margins (Proximity)
+- Changed the fun facts to an accordion so the repetitive lists didn't take over the page (Repetition)
+- Aligned the navigation bar center (Alignment)
+- Expanded the font pallet (Contrast)
+- Increased font size of headings (Contrast)
+- Made all of the links blue (Contrast)
+- Got rid of grayscale to color effect on hover (Contrast)
+- Added a background image (Contrast)
+- Centered the footer and made it always visible (Alignment)

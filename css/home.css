@@ -1,11 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 /* ------------------------------------------------------------------ 
  Base
  ------------------------------------------------------------------ */
@@ -49,6 +45,88 @@ a:hover{
 /*	transition: 2s;*/
 }
 
+/* ------------------------------------------------------------------ 
+ layout
+ ------------------------------------------------------------------ */
+
+/*page grid - layout*/
+body{
+	display: grid;
+	grid-template-columns: repeat(3, 33.33%);
+  	grid-template-rows: repeat(3, 33.33%);
+}
+
+/*upper-left  - layout*/
+.upper-left{
+	grid-column: 1 / 2;
+}
+.upper-left .number-semester{
+	position: relative;
+	left: 32.5%;
+    top: 27.2%;
+}
+.upper-left .number-semester .semester{
+	position: relative;
+    /*top: 40px;
+    left: 67%;*/
+}
+
+.upper-left img{
+	position: absolute;
+	left: 2%;
+    top: 0px;
+}
+
+
+/*upper-right  - layout*/
+.upper-right{
+	grid-column: 3 / 4;
+}
+.upper-right .login-container{
+	position: relative;
+	text-align: center;
+    top: 43.3%;
+    left: 3.2%;
+
+    width: 90%;
+}
+
+/*middle - layout*/
+.middle{
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+}
+.middle .welcome{
+	position: relative;
+
+}
+
+/*bottom-left - layout*/
+.bottom-left{
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+}
+.bottom-left .name-reference{
+	position: relative;
+	top: 25.6%;
+    left: 11.7%;
+}
+
+/*bottom-right - layout*/
+.bottom-right{
+	grid-row: 3 / 4;
+	grid-column: 3 / 4;
+}
+.bottom-right .team-reference{
+	position: relative;
+    top: 31.2%;
+    left: 3.2%;
+}
+
+
+/* ------------------------------------------------------------------ 
+Modules
+ ------------------------------------------------------------------ */
 
 .upper-left .number-semester {
 	width: 180%;	
@@ -74,7 +152,6 @@ a:hover{
 .upper-left img{
 	transform:rotate(-7deg);
 }
-
 
 
 .upper-right .login-container{
@@ -127,7 +204,6 @@ a:hover{
 }
 
 
-
 .bottom-right{
 	font-size: 50px;
 }
@@ -144,6 +220,7 @@ a:hover{
 .bottom-right .team-reference a{
 	display: block;
 }
+
 
 
 /* ------------------------------------------------------------------ 
@@ -396,6 +473,7 @@ body{
 }
 
 
+
 /*  500px  */
 @media (max-width: 500px){
 	.upper-left .number-semester {
@@ -428,4 +506,5 @@ body{
  /* ------------------------------------------------------------------ 
  state
  ------------------------------------------------------------------ */
+
 

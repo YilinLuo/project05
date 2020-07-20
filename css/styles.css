@@ -127,9 +127,6 @@ footer {
 	grid-row-gap: 0px;
 }
 
-.grid figure{
-	margin-left: 0px; /*align img and heading on the same vertical line*/
-}
 
 .intrf{
 	grid-column: 1 / 2;
@@ -139,9 +136,8 @@ footer {
 .intrp{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-
-	
 }
+
 .intrp p{
 	height: 398px;
 	display: table-cell;
@@ -160,7 +156,6 @@ footer {
 .Academics{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/*grid-template-rows: repeat(2, 1fr);*/
 	grid-column-gap: 50px;
 	grid-row-gap: 0px;
 }
@@ -173,6 +168,17 @@ footer {
 .classes{
 	grid-column: 2;
 	grid-row: 1;
+}
+
+
+/************************************MODULES***********************************/
+
+.description{
+	text-shadow: 1.2px 1.2px white;
+}
+
+.grid figure{
+	margin-left: 0px; /*align img and heading on the same vertical line*/
 }
 
 .classes .accordion .cs:hover{
@@ -200,9 +206,6 @@ footer {
 	border-bottom: 0.5px solid slategrey;
 	color: #1F5A94;
 }
-
-
-/************************************MODULES***********************************/
 
 /* black background */
 .blacktop{
@@ -292,6 +295,18 @@ main header {
 	color: #12a4d9;
 }
 
+/*quote design*/
+
+#aamilne, #play, #tolstoy, #lived, #quote, #quote2{
+	font-size: 25px;
+	font-weight: bold;
+
+	padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+/*******************************State************************************/
+
  @media screen and (max-width:967px){
  	html{
  		  display:block;
@@ -307,12 +322,3 @@ main header {
 
 
 
-/*quote design*/
-
-#aamilne, #play, #tolstoy, #lived, #quote, #quote2{
-	font-size: 25px;
-	font-weight: bold;
-
-	padding-top: 40px;
-    padding-bottom: 90px;
-}
