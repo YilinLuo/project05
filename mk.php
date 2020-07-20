@@ -19,7 +19,7 @@
 
 				<h2>Academics</h2><div class="Academics"><div class="ac">
 				<p>Molly Kilian is a rising sophomore at the University of Rochester, interested in a wide variety of subjects. She is planning to major in some form of humanities or social science, and to minor in Computer Science and/or Digital Media Studies.</p>
-				<p>She has taken the following classes in her time at U of R:</p></div>
+				<p>Here are some of the courses he has taken in his time at the University of Rochester:</p></div>
 				<div class="classes">
 				<div class="accordion">
 				
