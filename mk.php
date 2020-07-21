@@ -218,21 +218,24 @@
 		  $( function() {
 		    $(".accordion").accordion({
 	        	collapsible: true,
-	        	active: false
+	        	active: false,
+	        	heightStyle: "content"
 		    });
 		  });
 		   
 		  $( function() {
 		    $(".classes .accordion").accordion({
 	        	collapsible: true,
-	        	active: 0
+	        	active: 0,
+	        	heightStyle: "content"
 		    });
 		  }); 
 
 		  $( function() {
-		    $(".first-favourite .accordion").accordion({
+		    $(".Fun .accordion").accordion({
 	        	collapsible: true,
-	        	active: 0
+	        	active: 0,
+	        	heightStyle: "content"
 		    });
 		  }); 
   	</script>
