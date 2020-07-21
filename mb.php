@@ -195,12 +195,12 @@
 		</footer>
 		<?php include "inc/scripts.php"; ?>
 		<script>
-		  // $( function() {
-		  //   $(".accordion").accordion({
-	   //      	collapsible: true,
-	   //      	active: false
-		  //   });
-		  // });
+		//   $( function() {
+		//   	$(".accordion").accordion({
+	      //   	collapsible: true,
+	         //	active: false
+		    // });
+		//  });
 		   
 		  // $( function() {
 		  //   $(".classes .accordion").accordion({
