@@ -15,7 +15,7 @@
 
 		<div class="grid">
 			<div class="intrf">
-	        	<h2>Michael Bashner</a></h2>
+	        	<h2>Michael Bashner</h2>
 		        <figure >
 		        	<img src="images/mb.jpg" alt="Michael Bashner">
 		        </figure>
@@ -65,7 +65,7 @@
 		        <a href="jp.php" class="rdmore">Read more</a>
 		    </div>
 	    </div>
-   
+   	</div>
  </article>
 
 
@@ -76,7 +76,7 @@
 	</p>
 </footer>
 
-</div>
+
 <?php include "inc/scripts.php"; ?>
 </body>
 </html>
