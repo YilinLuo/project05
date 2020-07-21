@@ -205,10 +205,10 @@
 						<div class="one"> -->
 						<figure><img src="images/jp_cat.jpg" alt="jooeons_cat"></figure>
 						<p>Joo Eon has a cat. Hear all about it:</p>
-						<p>"My cat's name is Haku. She is named after the character from the film, <em>Spirited Away</em>. Story: We named our cat after Haku from the film because we thought he had blue eyes, just like our cat. Turns out he doesn't... She is a 9 year old Siamese cat, though she will be turning 10 on July 15. She's needy and is sometimes an ass (as cats typically are), but she is quite cute nonetheless."</p><!-- </div> -->
-					<!-- </div> --></div>
-				</section>
-				
+						<p>"My cat's name is Haku. She is named after the character from the film, <em>Spirited Away</em>. Story: We named our cat after Haku from the film because we thought he had blue eyes, just like our cat. Turns out he doesn't... She is a 9 year old Siamese cat, though she will be turning 10 on July 15. She's needy and is sometimes an ass (as cats typically are), but she is quite cute nonetheless."</p>
+					
+					</section>
+				</div>
 			</section>
 			<aside class="container">
 				<p id="quote2"><q>The story of life is quicker than the wink of an eye, the story of love is hello and goodbye...until we meet again.</q><span> ~ Jimi Hendrix</span></p>

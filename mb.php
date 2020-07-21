@@ -95,6 +95,7 @@
 						</aside>
 					</div>
 				</section>
+
 				<section class="container">
 					<div class="Fun">
 						<div class="fav">
@@ -175,18 +176,17 @@
 						<figure>
 								<img src="images/mbdog.jpg" alt="Michael's Dog and her name is Yoda">
 							</figure>
-						<p>Michael has one dog. Her name is yoda and she is a diva but a good floof ball.</p></div>
-			
-							</div>
-						
+						<p>Michael has one dog. Her name is yoda and she is a diva but a good floof ball.</p>	
 					</section>
-					
+				</div>
 				</section>
 			</article>
 		</main>
+
 		<aside class="container">
 			<p id="quote"><q>There’s no point in being grown up if you can’t be childish sometimes.</q><span> ~ The Doctor</span></p>
 		</aside>
+
 		<footer>
 			<p>
 				CSC 174: Advanced Front-end Web Design and Development -
