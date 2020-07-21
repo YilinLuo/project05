@@ -1,7 +1,5 @@
 <?php include "inc/home-html-top.php" ?>
 
-</head>
-<body>
 	<section class="upper-left">
 		<img src="images/logo.png" alt="csc 174">
 		<div class="number-semester">
