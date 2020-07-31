@@ -88,7 +88,21 @@ footer {
 
 	height: 50px;
 }
+footer .footer{
+	text-align: center;
 
+	color: white;
+	
+	margin-top: 0;
+}
+
+footer .footer a{
+	color: #12a4d9;
+
+}
+footer .footer a:hover{
+	color: #14C0FF;
+}
 /*********************LAYOUT*************************************/
 
 
@@ -354,12 +368,11 @@ main header {
 	top: 6px;
 }
 
+
 a.edit:hover, a.delete:hover{
 	color: #14C0FF;
 }
-
-
-footer a.new{
+a.new{
 	text-align: center;
 
 	font-size: 1.4em;
@@ -398,34 +411,7 @@ footer a.new{
 	position: relative;
     right: -7px;
 }
-/*.done-button{
-	position: fixed;
-	right: 12%;
-	top: 38%;
 
-	text-align: center;
-
-	width: 90px;
-    height: 43px;
-    padding-right: 14px;
-    padding-top: 3px;
-
-	background-color: #322e2f;
-	color: #12a4d9;
-
-	font-size: 1.4em;
-
-	border-radius: 5px;
-	box-shadow: 0px 5px 5px grey;
-}
-.done-button:before{
-	content: url(../images/go-back.png);
-	position: relative;
-	right: -5px;
-}
-.done-button:hover{
-	color: #14C0FF;
-}*/
 /*******************************State************************************/
 
  @media screen and (max-width:967px){
