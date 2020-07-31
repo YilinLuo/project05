@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 
 		} else {
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE aramirez_phonelist SET firstname='$firstname', lastname='$lastname', phone='$phone', email='$email' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', phone='$phone', email='$email' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: index.php");
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 	if (isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] > 0) {
 		// query db
 		$id = $_GET['id'];
-		$result = mysqli_query($connection, "SELECT * FROM aramirez_phonelist WHERE id=$id");
+		$result = mysqli_query($connection, "SELECT * FROM students WHERE id=$id");
 		$row = mysqli_fetch_array( $result );
 
 		// check that the 'id' matches up with a row in the databse
