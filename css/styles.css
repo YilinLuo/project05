@@ -55,6 +55,7 @@ a {
 
 a:hover {
 	color: #12a4d9;
+	text-decoration: underline;
 }
 
 
@@ -81,7 +82,11 @@ footer {
 	width: 100%;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	text-align: center;
+
+
+	background-color: #322e2f;
+
+	height: 50px;
 }
 
 /*********************LAYOUT*************************************/
@@ -146,12 +151,37 @@ footer {
 .rdmore{
 	grid-column: 3 / 4;
 	grid-row: 1 / 2;
+
+	display: flex;
 }
-.rdmore a{
-	height: 398px;
-	display: table-cell;
-    vertical-align: middle;
+.rdmore a.read-more{
+	flex: 0 0 auto;
+	height: fit-content;
+
+	position: relative;
+	top: 45%;
 }
+.rdmore div{
+	margin-left: 14%;
+
+	font-size: 1.2em;
+
+}
+.rdmore a.delete{
+	display: block;
+	position: relative;
+	top: 50%;
+
+	color: #12a4d9;
+}
+.rdmore a.edit{
+	display: block;
+	position: relative;
+	top: 35%;
+
+	color: #12a4d9;
+}
+
 
 .Academics{
 	display: grid;
@@ -305,6 +335,97 @@ main header {
     padding-bottom: 90px;
 }
 
+
+/*modify button*/
+.modify-button{
+	position: fixed;
+	right: 12%;
+	top: 38%;
+
+	color: #1F5A94;
+}
+.modify-button:hover{
+	color: #12a4d9;
+}
+.modify-button::before{
+	content: url(../images/modify.png);
+	position: relative;
+	right: 6px;
+	top: 6px;
+}
+
+a.edit:hover, a.delete:hover{
+	color: #14C0FF;
+}
+
+
+footer a.new{
+	text-align: center;
+
+	font-size: 1.4em;
+	color: #12a4d9;
+
+	margin: 0 auto;
+	
+	width: 40%;
+	height: 100%;
+    display: block;
+}
+
+
+.done-button{
+	position: absolute;
+	top: 7px;
+    right: 12%;
+    font-size: 1.6em;
+
+    color: white;
+    background-color: #12a4d9;
+
+    text-align: center;
+
+    width: 100px;
+
+    border-radius: 10px;
+    padding-right: 17px;
+}
+.done-button:hover{
+	color: white;
+	background-color: #1F5A94;
+}
+.done-button:before{
+	content: url(../images/go-back.png);
+	position: relative;
+    right: -7px;
+}
+/*.done-button{
+	position: fixed;
+	right: 12%;
+	top: 38%;
+
+	text-align: center;
+
+	width: 90px;
+    height: 43px;
+    padding-right: 14px;
+    padding-top: 3px;
+
+	background-color: #322e2f;
+	color: #12a4d9;
+
+	font-size: 1.4em;
+
+	border-radius: 5px;
+	box-shadow: 0px 5px 5px grey;
+}
+.done-button:before{
+	content: url(../images/go-back.png);
+	position: relative;
+	right: -5px;
+}
+.done-button:hover{
+	color: #14C0FF;
+}*/
 /*******************************State************************************/
 
  @media screen and (max-width:967px){

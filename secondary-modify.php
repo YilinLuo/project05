@@ -1,12 +1,13 @@
 <?php include "inc/html-top.php"; ?>
 
-<a href="secondary-modify.php" class="modify-button" title="I view this as a developer tool. So I decide to put this button on the right side without destroying the look of centered actual centent">Modify Content</a>
+
+
 
 <article>
 	<header class="blacktop2">
 		<div class = "blackcontent">
 			<div class="homebtn">
-				<a href="index.php" >Home</a>
+				<a href="index.php">Home</a>
 			</div>
 
 			<h1 class="London">London</h1>
@@ -28,6 +29,10 @@
 
 	    	<div class="rdmore">
 	        	<a href="mb.php" class="read-more">Read more</a>
+	        	<div>
+	  				<a href="" class="edit">Edit</a>
+	  				<a href="" class="delete">Delete</a>
+	  			</div>
 	        </div>
 	    </div>
 
@@ -46,6 +51,10 @@
 
 		    <div class="rdmore">
 		      	<a href="mk.php" class="read-more">Read more</a>
+		      	<div>
+	  				<a href="" class="edit">Edit</a>
+	  				<a href="" class="delete">Delete</a>
+	  			</div>
 		    </div>
 		</div>
  
@@ -64,6 +73,10 @@
 
 		    <div class="rdmore">
 		        <a href="jp.php" class="read-more">Read more</a>
+		        <div>
+	  				<a href="" class="edit">Edit</a>
+	  				<a href="" class="delete">Delete</a>
+	  			</div>
 		    </div>
 	    </div>
    	</div>
@@ -71,10 +84,8 @@
 
 
 <footer>
-	<p>
-	CSC 174: Advanced Front-end Web Design and Development -
-	<a href="http://docs.csc174.org" target=_blank>Course home page</a>
-	</p>
+	<a href="new.php" class="new" title="Add new student's information">Add New Entry</a>
+	<a href="secondary.php" class="done-button" title="Done with modify. Back to original page.">Done</a>
 </footer>
 
 
