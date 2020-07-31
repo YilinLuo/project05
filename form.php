@@ -26,14 +26,14 @@
 		--> 
 
 
-		<label for="excerpt">Excerpt *:</label>
-		<textarea id="excerpt" name="excerpt" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?" required></textarea>
+		<label for="bio">Excerpt *:</label>
+		<textarea id="bio" name="bio" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?" required></textarea>
 
 
 		<label for="photo">Photo *:</label>
 		<!-- If we are in edit.php, display the current photo on the left of file-upload button
 		If we are in new.php, no photo will be shown -->
-		<input type="file" name="photo" accept="image/*" required>
+		<input type="file" name="image" accept="image/*" required>
 
 
 		<input type="checkbox" name="confirm" id="confirm" required>
