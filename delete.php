@@ -3,7 +3,8 @@
 include('connect-db.php');
 
 // check if the 'id' variable is set in URL, and check that it is valid
-if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+if (isset($_GET['id']) && is_numeric($_GET['id'])) 
+{
 	// get id value
 	$id = $_GET['id'];
 
@@ -11,10 +12,12 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 	$result = mysqli_query($connection, "DELETE FROM students WHERE id=$id");
 
 	// redirect back to the homepage to see the results
-	header("Location: index.php");
+	header("Location: secondary.php");
 
-} else {
+} 
+else 
+{
 	// if id isn't set, or isn't valid, redirect back to homepage
-	header("Location: index.php");
+	header("Location: secondary.php");
 }
 ?>

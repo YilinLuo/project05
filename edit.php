@@ -1,5 +1,5 @@
 <?php
-include('renderform.php');
+include('form.php');
 
 // connect to the database
 include('connect-db.php');
@@ -34,7 +34,7 @@ if (isset($_POST['submit']))
 			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', image='$image', link='$link', bio='$bio' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
-			header("Location: index.php");
+			header("Location: secondary.php");
 		}
 	} 
 	else 

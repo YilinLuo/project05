@@ -1,5 +1,5 @@
 <?php
-include('renderform.php');
+include('form.php');
 
 // connect to the database
 include('connect-db.php');
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 		$result = mysqli_query($connection, "INSERT INTO students (firstname, lastname, image, link, bio) VALUES ('$firstname', '$lastname', '$image', '$link', '$bio')");
 
 		// once saved, redirect back to the view page
-		header("Location: index.php");
+		header("Location: secondary.php");
 	}
 } 
 else 
