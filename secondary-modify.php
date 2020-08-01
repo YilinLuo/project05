@@ -30,8 +30,8 @@
 	    	<div class="rdmore">
 	        	<a href="mb.php" class="read-more">Read more</a>
 	        	<div>
-	  				<a href="" class="edit">Edit</a>
-	  				<a href="" class="delete">Delete</a>
+	  				<a href="edit.php" class="edit">Edit</a>
+	  				<a href="delete.php" class="delete">Delete</a>
 	  			</div>
 	        </div>
 	    </div>
@@ -52,8 +52,8 @@
 		    <div class="rdmore">
 		      	<a href="mk.php" class="read-more">Read more</a>
 		      	<div>
-	  				<a href="" class="edit">Edit</a>
-	  				<a href="" class="delete">Delete</a>
+	  				<a href="edit.php" class="edit">Edit</a>
+	  				<a href="delete.php" class="delete">Delete</a>
 	  			</div>
 		    </div>
 		</div>
@@ -74,8 +74,8 @@
 		    <div class="rdmore">
 		        <a href="jp.php" class="read-more">Read more</a>
 		        <div>
-	  				<a href="" class="edit">Edit</a>
-	  				<a href="" class="delete">Delete</a>
+	  				<a href="edit.php" class="edit">Edit</a>
+	  				<a href="delete.php" class="delete">Delete</a>
 	  			</div>
 		    </div>
 	    </div>

@@ -14,24 +14,24 @@ if (isset($_POST['submit']))
 		$id = $_POST['id'];
 		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
 		$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
-		$image = mysqli_real_escape_string($connection, htmlspecialchars($_POST['image']));
+		$quote = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
 		$link = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
 		$bio = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
 
 		// check that firstname/lastname fields are both filled in
-		if ($firstname == '' || $lastname == '' || $image == '' || $link == '' || $bio == '') 
+		if ($firstname == '' || $lastname == '' || $quote == '' || $link == '' || $bio == '') 
 		{
 			// generate error message
 			$error = 'ERROR: Please fill in all required fields!';
 
 			//error, display form
-			renderForm($id, $firstname, $lastname, $image, $link, $bio, $error);
+			renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error);
 
 		} 
 		else 
 		{
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', image='$image', link='$link', bio='$bio' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', quote='$quote', link='$link', bio='$bio' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: secondary.php");
@@ -60,12 +60,12 @@ else
 			// get data from db
 			$firstname = $row['firstname'];
 			$lastname = $row['lastname'];
-			$image = $row['image'];
+			$quote = $row['quote'];
 			$link = $row['link'];
 			$bio = $row['bio'];
 
 			// show form
-			renderForm($id, $firstname, $lastname, $image, $link, $bio, '');
+			renderForm($id, $firstname, $lastname, $quote, $link, $bio, '');
 		} 
 		else 
 		{

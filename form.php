@@ -38,10 +38,13 @@
 		<br><br>
 
 
-		<label for="photo">Photo *:</label>
+		<!-- <label for="photo">Photo *:</label> -->
 		<!-- If we are in edit.php, display the current photo on the left of file-upload button
 		If we are in new.php, no photo will be shown -->
-		<input type="file" name="image" accept="image/*" required>
+		<!-- <input type="file" name="image" accept="image/*" required> -->
+		
+		<label for="quote">Favorite Quote *:</label> 
+		<textarea id="quote" name="quote" rows="1" cols="25" placeholder="Favorite Quote" ></textarea>
 		<br><br>
 
 
