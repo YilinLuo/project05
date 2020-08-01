@@ -6,14 +6,14 @@
 	<header class="blacktop2">
 		<div class = "blackcontent">
 			<div class="homebtn">
-				<a href="index.php" >Home</a>
+				<a href="index.php">Home</a>
 			</div>
 
-			<h1 class="London">London</h1>
+			
 		</div>
 	</header>
 	<div class="container">
-
+		<h1 class="London">London</h1>
 		<div class="grid">
 			<div class="intrf">
 	        	<h2>Michael Bashner</h2>
