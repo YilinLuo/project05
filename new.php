@@ -5,7 +5,8 @@ include('form.php');
 include('connect-db.php');
 
 // check if the form has been submitted. If it has, start to process the form and save it to the database
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) 
+{
 	// get form data, making sure it is valid
 	$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
 	$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
@@ -26,7 +27,7 @@ if (isset($_POST['submit'])) {
 	else 
 	{
 		// save the data to the database
-		$result = mysqli_query($connection, "INSERT INTO students (firstname, lastname, image, link, bio) VALUES ('$firstname', '$lastname', '$quote', '$link', '$bio')");
+		$result = mysqli_query($connection, "INSERT INTO students (firstname, lastname, quote, link, bio) VALUES ('$firstname', '$lastname', '$quote', '$link', '$bio')");
 
 		// once saved, redirect back to the view page
 		header("Location: secondary.php");
