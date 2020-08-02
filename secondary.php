@@ -9,9 +9,12 @@
 				<a href="index.php">Home</a>
 			</div>
 
-			
+			<div class="secondary-login">
+				<a href="login.php" >Login</a>
+			</div>
 		</div>
 	</header>
+
 	<div class="container">
 		<h1 class="London">London</h1>
 		<div class="grid">

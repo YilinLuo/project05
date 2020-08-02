@@ -303,13 +303,16 @@ main header {
 	letter-spacing: 2px;
 }
 
+
+/*home button*/
 .homebtn{
 	position: relative;
     font-size: 22px;
 
     left: -30px;
-}
 
+    width: fit-content;
+}
 .homebtn a{
 	width: 100%;
     height: 100%;
@@ -324,11 +327,34 @@ main header {
     position: relative;
     left: 6px;
 }
-
-
 .homebtn a:hover{
 	color: #14C0FF;
 }
+/**/
+
+
+/*login button*/
+.secondary-login{
+	font-size: 22px;
+	float: right;
+}
+.secondary-login a{
+	color: #12a4d9;
+
+	position: relative;
+	top: -35px;
+	right: 184px;
+
+}
+.secondary-login a::before{
+	content: url(../images/login-new.png);
+	position: relative;
+	right: 3px;
+	top: 4px;
+}
+/**/
+
+
 
 .name{
 	color: #e8d21d;
