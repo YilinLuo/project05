@@ -10,7 +10,12 @@
 			</div>
 
 			<div class="secondary-login">
-				<a href="login.php" >Login</a>
+				<?php if(isset($_SESSION['username'])) { ?>
+			      <a href="logout.php">Logout</a>
+			    <?php } 
+			    else { ?>
+			      <a href="login.php">Login</a>
+			    <?php } ?>
 			</div>
 		</div>
 	</header>

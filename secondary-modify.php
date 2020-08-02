@@ -10,11 +10,19 @@
 				<a href="index.php">Home</a>
 			</div>
 
-			<h1 class="London">London</h1>
+			<div class="secondary-login">
+				<?php if(isset($_SESSION['username'])) { ?>
+			      <a href="logout.php">Logout</a>
+			    <?php } 
+			    else { ?>
+			      <a href="login.php">Login</a>
+			    <?php } ?>
+			</div>
 		</div>
 	</header>
 	<div class="container">
-
+		<h1 class="London">London</h1>
+		
 		<div class="grid">
 			<div class="intrf">
 	        	<h2>Michael Bashner</h2>

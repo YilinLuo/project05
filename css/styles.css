@@ -344,10 +344,9 @@ main header {
 	position: relative;
 	top: -35px;
 	right: 184px;
-
 }
 .secondary-login a::before{
-	content: url(../images/login-new.png);
+	content: url(../images/login-grey.png);
 	position: relative;
 	right: 3px;
 	top: 4px;
