@@ -25,3 +25,13 @@ body{
     float:none;
     text-align:left;
 }
+
+.login{
+
+	background-color: darkseagreen; 
+	padding: 28px;
+	border-radius: 8px;
+	border-color: #00a3ff;
+	border-width: 2px;
+
+}

@@ -101,31 +101,43 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 
-    <<link rel="stylesheet" type="text/css" href="css/override.css">
+    <link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
 <body>
     <div class="container-md">
-        <h1>Login</h2>
+        <div  class="row  row-center" >
+        <div  class="col-center">
+
+            <div class="login">
+        
+        <form class=“form-horizontal” role=“form” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+            <h1>Login</h1>
         <p class="lead">Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
             <div class="form-group <?php echo (!empty($username_err)) ? 
             'has-error' : ''; ?>">
-                <label>Username</label>
+                <label class="control-label">Username</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
-            </div>    
+            </div>  
+
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
+                <label class="control-label" >Password</label>
                 <input type="password" name="password" class="form-control">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
+
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>
-
+</div>
+</div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
