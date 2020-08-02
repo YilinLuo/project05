@@ -140,7 +140,7 @@ footer .footer a:hover{
 }
 .grid{
 	display: grid;
-	grid-template-columns: 1.3fr 1.5fr 1fr;
+	grid-template-columns: 1.2fr 1.3fr 1.05fr;
 	
 	grid-column-gap: 15px;
 	grid-row-gap: 0px;
@@ -151,25 +151,32 @@ footer .footer a:hover{
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 }
+.intrf h2{
+	margin-bottom: 10px;
+}
+
 .intrf p{
-	height: 200px;
-	display: table-cell;
-    vertical-align: middle;
-
-    font-weight: 600;
-
-    font-size: 1.5em;
+	padding-right: 10px;
+    font-size: 1.2em;
 }
 .intrp{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 }
+.intrp h3{
+	padding-top: 5px;
 
-.intrp p{
-	height: 300px;
-	display: table-cell;
-    vertical-align: middle;
+	color: #cf1578;
 }
+.intrp p{
+	padding-top: 80px;
+
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+
+
 .rdmore{
 	grid-column: 3 / 4;
 	grid-row: 1 / 2;
@@ -187,7 +194,6 @@ footer .footer a:hover{
 	margin-left: 14%;
 
 	font-size: 1.2em;
-
 }
 .rdmore a.delete{
 	display: block;
@@ -228,7 +234,9 @@ footer .footer a:hover{
 .description{
 	text-shadow: 1.5px 1.5px white;
 }
-
+.grid{
+	margin-bottom: 50px;
+}
 .grid figure{
 	margin-left: 0px; /*align img and heading on the same vertical line*/
 }
@@ -351,7 +359,7 @@ main header {
 
 	position: relative;
 	top: -35px;
-	right: 184px;
+	right: 205px;
 }
 .secondary-login a::before{
 	content: url(../images/login-grey.png);

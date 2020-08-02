@@ -44,20 +44,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<div class="container">
 
 	<h1 class="London">London</h1>
-		
+
 	<?php while($data = mysqli_fetch_array($result)) {?>
 		<div class="grid">
+
 			<div class = "intrf">
-				<p><?php echo $data["quote"];?></p>
 				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
+				<p><?php echo $data["bio"];?></p>
 			</div> 
 				
 			<div class="intrp">
-				<p><?php echo $data["bio"];?></p>
+					<p><?php echo $data["quote"];?></p>
 			</div> 
 
 			<div class="rdmore">
-				<a href="https://<?php echo $data["link"];?>">Read More!</a>
+				<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
 
 				<div>
 					<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>

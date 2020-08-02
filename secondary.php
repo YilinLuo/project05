@@ -43,15 +43,16 @@
 
 			<div class = "intrf">
 				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
-				<p><?php echo $data["quote"];?></p>
+				<p><?php echo $data["bio"];?></p>
+				
 			</div> 
 				
 			<div class="intrp">
-				<p><?php echo $data["bio"];?></p>
+				<p><?php echo $data["quote"];?></p>
 			</div> 
 
 			<div class="rdmore">
-				<a href="https://<?php echo $data["link"];?>">Read More!</a>
+				<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
 			</div> 
 
 		</div> 

@@ -56,8 +56,10 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 	<div class="form-group">
 
 		<label class="control-label" for="link">Link *: </label>
-		<input class="form-control" type="text" id="link" name="link" placeholder="URL to the student's personal page" value="<?php echo $link; ?>" required><br>
-		
+		<div class="form-row">
+			<div class="col-sm-1.5 http-prefix">https://</div>
+			<input class="d-inline form-control col-sm-10" type="text" id="link" name="link" placeholder="link to the student's personal page. Don't include 'https://'" value="<?php echo $link; ?>" required><br>
+		</div>
 
 	</div>
 
@@ -71,7 +73,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 
 
 		<label class="control-label" for="bio">Excerpt *:</label>
-		<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?" value="<?php echo $bio; ?>" required></textarea>
+		<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?"  required><?php echo $bio; ?></textarea>
 		<br>
 
 	</div>
@@ -83,7 +85,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 		<!-- <input type="file" name="image" accept="image/*" required> -->
 		<div class="form-group">
 		<label class="control-label" for="quote">Favorite Quote *:</label> 
-		<textarea class="form-control" id="quote" name="quote" rows="1" cols="25" placeholder="Favorite Quote" value="<?php echo $quote; ?>" ></textarea>
+		<textarea class="form-control" id="quote" name="quote" rows="1" cols="25" placeholder="Favorite Quote" ><?php echo $quote; ?></textarea>
 		<br>
 	</div>
 
