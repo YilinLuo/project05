@@ -11,7 +11,7 @@
 
 	<section class="upper-right">
 		<div class="login-container">
-			<a href="">Login</a>
+			<a href="login.php">Login</a>
 		</div>
 	</section>
 

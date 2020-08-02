@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: secondary.php?tip=Login Before");
+    exit;
+}
+?>
+
 <?php include "inc/html-top.php"; ?>
 
 
@@ -10,11 +21,19 @@
 				<a href="index.php">Home</a>
 			</div>
 
-			<h1 class="London">London</h1>
+			<div class="secondary-login">
+				<?php if(isset($_SESSION['username'])) { ?>
+			      <a href="logout.php">Logout</a>
+			    <?php } 
+			    else { ?>
+			      <a href="login.php">Login</a>
+			    <?php } ?>
+			</div>
 		</div>
 	</header>
 	<div class="container">
-
+		<h1 class="London">London</h1>
+		
 		<div class="grid">
 			<div class="intrf">
 	        	<h2>Michael Bashner</h2>

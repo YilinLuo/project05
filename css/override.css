@@ -1,0 +1,75 @@
+
+body{
+	background: url(../images/bg3.png) no-repeat;
+	background-size:cover;
+
+}  
+ 
+ .container{
+
+    display:table;
+    height:100%;
+
+}
+
+.row{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+}
+
+.edit{
+    color: #1F5A94;
+    font-family: 'Nunito', sans-serif;
+    padding-top:8px;
+    height:35px;
+}
+
+.newinfo{
+    border-bottom: solid 10px;
+    border-bottom-color: #cf1578;
+    background-color: #322e2f;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+.btn-danger{
+    float: right;
+    background-color:#8a1f1f;
+    border-color:#8a1f1f;
+}
+
+.btn-primary{
+    background-color:#1F5A94;
+    border-color:#1F5A94;
+
+}
+
+.title{
+    color: #e8d21d;
+}
+
+.login, .signup{
+
+	background-color: #322e2f;
+    padding: 50px;
+    
+    margin-top: 100px;
+    border: solid 10px;
+    border-color: #cf1578;
+    box-shadow: 10px 10px 10px;
+    color:white;
+    box-shadow: #cf1578 5px 5px 20px;
+
+}

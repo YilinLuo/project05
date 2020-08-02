@@ -86,11 +86,16 @@ body{
 	position: relative;
 	text-align: center;
     top: 43.3%;
-    left: 3.2%;
+    left: -0.8%;
 
     width: 90%;
 }
+.upper-right .login-container a::before{
+	content: url(../images/login-black.png);
+	position: relative;
+	top: 9px;
 
+}
 /*middle - layout*/
 .middle{
 	grid-column: 1 / 4;
