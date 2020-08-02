@@ -101,10 +101,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="override.css">
+    <<link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-md">
         <h1>Login</h2>
         <p class="lead">Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
