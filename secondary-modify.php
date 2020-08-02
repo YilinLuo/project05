@@ -7,9 +7,7 @@
 
     $query  = "SELECT * FROM students";
     $result = mysqli_query($connection, $query);
-?>
 
-<?php
 // Initialize the session
 session_start();
  
@@ -43,14 +41,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		</div>
 	</header>
 
- <?php
-        while($data = mysqli_fetch_array($result)) {
-    ?>
-
 	<div class="container">
 
+	<h1 class="London">London</h1>
+		
+	<?php while($data = mysqli_fetch_array($result)) {?>
 		<div class="grid">
-
 			<div class = "intrf">
 				<p><?php echo $data["quote"];?></p>
 				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
@@ -61,17 +57,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 			</div> 
 
 			<div class="rdmore">
-				<a href="https://<?php echo $data["link"];?>"><div>Read More!</div></a>
-				<div>
-				<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
-    			<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
-			</div> 
+				<a href="https://<?php echo $data["link"];?>">Read More!</a>
 
+				<div>
+					<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
+	    			<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
+				</div> 
+			</div>
 		</div> 
+    <?php } ?>
 
 	</div> 
-
-    <?php } ?>
  </article>
 
 

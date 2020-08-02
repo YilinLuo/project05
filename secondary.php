@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	$dbhost = "66.147.242.186";
     $dbuser = "urcscon3_london";
     $dbpass = "coffee1N/21!";
@@ -7,11 +9,11 @@
 
     $query  = "SELECT * FROM students";
     $result = mysqli_query($connection, $query);
+
+	include "inc/html-top.php"; 
 ?>
 
-<?php include "inc/html-top.php"; ?>
-
-<a href="secondary-modify.php" class="modify-button" title="I view this as a developer tool. So I decide to put this button on the right side without destroying the look of centered actual centent">Modify Content</a>
+<a href="secondary-modify.php" class="modify-button" title=""><?php echo $_GET["tip"]?> Modify Content</a>
 
 <article>
 	<header class="blacktop2">
@@ -20,21 +22,28 @@
 				<a href="index.php">Home</a>
 			</div>
 
-			<h1 class="London">London</h1>
+			<div class="secondary-login">
+				<?php if(isset($_SESSION['username'])) { ?>
+			      <a href="logout.php">Logout</a>
+			    <?php } 
+			    else { ?>
+			      <a href="login.php">Login</a>
+			    <?php } ?>
+			</div>
 		</div>
 	</header>
 
-	<?php
-        while($data = mysqli_fetch_assoc($result)) {
-    ?>
-
 	<div class="container">
 
+	<h1 class="London">London</h1>
+
+	<?php while($data = mysqli_fetch_assoc($result)) { ?>
+   
 		<div class="grid">
 
 			<div class = "intrf">
-				<p><?php echo $data["quote"];?></p>
 				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
+				<p><?php echo $data["quote"];?></p>
 			</div> 
 				
 			<div class="intrp">
@@ -42,14 +51,14 @@
 			</div> 
 
 			<div class="rdmore">
-				<a href="https://<?php echo $data["link"];?>"><div>Read More!</div></a>
+				<a href="https://<?php echo $data["link"];?>">Read More!</a>
 			</div> 
 
 		</div> 
 
-	</div> 
-
     <?php } ?>
+
+	</div> 
  </article>
 
 
