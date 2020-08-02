@@ -98,21 +98,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
     </style>
 
     <link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
 <body>
-    <div class="container-md">
-        <div  class="row  row-center" >
-        <div  class="col-center">
+    <div class="container">
+        <div class="row row-centered">
+        <div class="col-centered">
 
             <div class="login">
         
         <form class=“form-horizontal” role=“form” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <h1>Login</h1>
+            <h1 class="text-center">Login</h1>
         <p class="lead">Please fill in your credentials to login.</p>
 
             <div class="form-group <?php echo (!empty($username_err)) ? 

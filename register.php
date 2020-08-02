@@ -101,21 +101,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style type="text/css">
         body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
     </style>
     <link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
 <body>
-      
 
         <div class="container">
 
-         <div  class="row  row-center" >
-        <div  class="col-center">
+         <div class="row row-centered" >
+        <div class="col-centered">
+            <div class="signup">
 
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+        
+
         <form class=“form-horizontal” role=“form” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+            <h1 class="text-center">Sign Up</h1>
+        <p class="lead">Please fill this form to create an account.</p>
 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
@@ -142,7 +144,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
-        
+     </div>   
     </div>
 </div>
 
