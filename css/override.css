@@ -60,27 +60,16 @@ body{
 
 }
 
-.login{
+.login, .signup{
 
-	background-color: #ffffff;
-
-	padding: 50px;
-	border-radius: 8px;
-	border-color: #000000;
-	border-width: 2px;
-    margin-top: 100px;
-
-}
-
-.signup{
-
-    background-color: #ffffff;
-
+	background-color: #322e2f;
     padding: 50px;
-    border-radius: 8px;
-    border-color: #000000;
-    border-width: 2px;
+    
     margin-top: 100px;
-
+    border: solid 10px;
+    border-color: #cf1578;
+    box-shadow: 10px 10px 10px;
+    color:white;
+    box-shadow: #cf1578 5px 5px 20px;
 
 }
