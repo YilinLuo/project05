@@ -44,10 +44,6 @@ body{
     margin:0;
 }
 
-.text-warning{
-    color: #e8d21d;
-}
-
 .btn-danger{
     float: right;
     background-color:#8a1f1f;
@@ -58,6 +54,10 @@ body{
     background-color:#1F5A94;
     border-color:#1F5A94;
 
+}
+
+.title{
+    color: #e8d21d;
 }
 
 .login, .signup{
