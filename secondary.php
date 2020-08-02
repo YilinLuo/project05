@@ -1,3 +1,14 @@
+<?php
+	$dbhost = "66.147.242.186";
+    $dbuser = "urcscon3_london";
+    $dbpass = "coffee1N/21!";
+    $dbname = "urcscon3_london";
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+    $query  = "SELECT * FROM students";
+    $result = mysqli_query($connection, $query);
+?>
+
 <?php include "inc/html-top.php"; ?>
 
 <a href="secondary-modify.php" class="modify-button" title="I view this as a developer tool. So I decide to put this button on the right side without destroying the look of centered actual centent">Modify Content</a>
@@ -6,67 +17,39 @@
 	<header class="blacktop2">
 		<div class = "blackcontent">
 			<div class="homebtn">
-				<a href="index.php" >Home</a>
+				<a href="index.php">Home</a>
 			</div>
 
 			<h1 class="London">London</h1>
 		</div>
 	</header>
+
+	<?php
+        while($data = mysqli_fetch_assoc($result)) {
+    ?>
+
 	<div class="container">
 
 		<div class="grid">
-			<div class="intrf">
-	        	<h2>Michael Bashner</h2>
-		        <figure >
-		        	<img src="images/mb.jpg" alt="Michael Bashner">
-		        </figure>
-	        </div>
 
-	        <div class="intrp">
-	        	<p class="description">Michael Bashner is a student at the University of Rochester majoring in Computer Science, minoring in Linguistics, and clustering in Gender, Sexuality, and Women's Studies.</p>
-	    	</div>
+			<div class = "intrf">
+				<p><?php echo $data["quote"];?></p>
+				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
+			</div> 
+				
+			<div class="intrp">
+				<p><?php echo $data["bio"];?></p>
+			</div> 
 
-	    	<div class="rdmore">
-	        	<a href="mb.php" class="read-more">Read more</a>
-	        </div>
-	    </div>
+			<div class="rdmore">
+				<a href="https://<?php echo $data["link"];?>"><div>Read More!</div></a>
+			</div> 
 
+		</div> 
 
-    	<div class="grid">
-    		<div class="intrf">
-	        	<h2>Molly Kilian</h2>
-	        	<figure>
-	        		<img src="images/headshot.jpg" alt="Molly Kilian">
-	        	</figure>
-	        </div>
+	</div> 
 
-	        <div class="intrp">
-		        <p class="description">Molly Kilian is a rising sophomore at the University of Rochester, interested in a wide variety of subjects. She is planning to major in some form of humanities or social science, and to minor in Computer Science and/or Digital Media Studies.</p>
-		    </div>
-
-		    <div class="rdmore">
-		      	<a href="mk.php" class="read-more">Read more</a>
-		    </div>
-		</div>
- 
-
- 		<div class="grid">
-    		<div class="intrf">
-	        	<h2>Joo Eon Park</h2>
-		        <figure>
-		        	<img src="images/jp_self.jpg" alt="Joo Eon Park">
-		        </figure>
-		    </div>
-
-		    <div class="intrp">
-		        <p class="description">Joo Eon Park is a rising junior at the University of Rochester, majoring in Computer Science and minoring in Digital Media Studies. </p>
-		    </div>
-
-		    <div class="rdmore">
-		        <a href="jp.php" class="read-more">Read more</a>
-		    </div>
-	    </div>
-   	</div>
+    <?php } ?>
  </article>
 
 
