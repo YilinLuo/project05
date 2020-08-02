@@ -40,7 +40,7 @@ if (isset($_POST['submit']))
 	else 
 	{
 		// if the 'id' isn't valid, display an error
-		echo 'Error!';
+		echo 'Error! id not valid';
 	}
 } 
 else 
@@ -76,7 +76,7 @@ else
 	else 
 	{
 		// if the 'id' in the URL isn't valid, or if there is no 'id' value, display an error
-		echo 'Error!';
+		echo 'Error! id in the URL is not valid, or there is no id value';
 	}
 }
 ?>

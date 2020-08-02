@@ -1,4 +1,15 @@
 <?php
+	$dbhost = "66.147.242.186";
+    $dbuser = "urcscon3_london";
+    $dbpass = "coffee1N/21!";
+    $dbname = "urcscon3_london";
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+    $query  = "SELECT * FROM students";
+    $result = mysqli_query($connection, $query);
+?>
+
+<?php
 // Initialize the session
 session_start();
  
@@ -31,74 +42,36 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 			</div>
 		</div>
 	</header>
+
+ <?php
+        while($data = mysqli_fetch_array($result)) {
+    ?>
+
 	<div class="container">
-		<h1 class="London">London</h1>
-		
+
 		<div class="grid">
-			<div class="intrf">
-	        	<h2>Michael Bashner</h2>
-		        <figure >
-		        	<img src="images/mb.jpg" alt="Michael Bashner">
-		        </figure>
-	        </div>
 
-	        <div class="intrp">
-	        	<p class="description">Michael Bashner is a student at the University of Rochester majoring in Computer Science, minoring in Linguistics, and clustering in Gender, Sexuality, and Women's Studies.</p>
-	    	</div>
+			<div class = "intrf">
+				<p><?php echo $data["quote"];?></p>
+				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
+			</div> 
+				
+			<div class="intrp">
+				<p><?php echo $data["bio"];?></p>
+			</div> 
 
-	    	<div class="rdmore">
-	        	<a href="mb.php" class="read-more">Read more</a>
-	        	<div>
-	  				<a href="edit.php" class="edit">Edit</a>
-	  				<a href="delete.php" class="delete">Delete</a>
-	  			</div>
-	        </div>
-	    </div>
+			<div class="rdmore">
+				<a href="https://<?php echo $data["link"];?>"><div>Read More!</div></a>
+				<div>
+				<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
+    			<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
+			</div> 
 
+		</div> 
 
-    	<div class="grid">
-    		<div class="intrf">
-	        	<h2>Molly Kilian</h2>
-	        	<figure>
-	        		<img src="images/headshot.jpg" alt="Molly Kilian">
-	        	</figure>
-	        </div>
+	</div> 
 
-	        <div class="intrp">
-		        <p class="description">Molly Kilian is a rising sophomore at the University of Rochester, interested in a wide variety of subjects. She is planning to major in some form of humanities or social science, and to minor in Computer Science and/or Digital Media Studies.</p>
-		    </div>
-
-		    <div class="rdmore">
-		      	<a href="mk.php" class="read-more">Read more</a>
-		      	<div>
-	  				<a href="edit.php" class="edit">Edit</a>
-	  				<a href="delete.php" class="delete">Delete</a>
-	  			</div>
-		    </div>
-		</div>
- 
-
- 		<div class="grid">
-    		<div class="intrf">
-	        	<h2>Joo Eon Park</h2>
-		        <figure>
-		        	<img src="images/jp_self.jpg" alt="Joo Eon Park">
-		        </figure>
-		    </div>
-
-		    <div class="intrp">
-		        <p class="description">Joo Eon Park is a rising junior at the University of Rochester, majoring in Computer Science and minoring in Digital Media Studies. </p>
-		    </div>
-
-		    <div class="rdmore">
-		        <a href="jp.php" class="read-more">Read more</a>
-		        <div>
-	  				<a href="edit.php" class="edit">Edit</a>
-	  				<a href="delete.php" class="delete">Delete</a>
-	  			</div>
-		    </div>
-	    </div>
-   	</div>
+    <?php } ?>
  </article>
 
 

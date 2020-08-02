@@ -1,3 +1,8 @@
+<?php
+// creates the edit record form
+function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +12,14 @@
   <link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
 <body>
+
+<?php
+	// if there are any errors, display them
+	if ($error != '') {
+		echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
+	}
+?>
+
 
 	<h1 class="text-center edit">New/Edit(dynamic) Student Information</h1><br>
 	<div class="newinfo">
@@ -19,19 +32,22 @@
 
 	
 	<!--use php to create dynamic h1, or create 2 forms(new info and edit info). Don't know which way would be implmented -->
-	<form class=“form-horizontal” role=“form” method="post">
+	<form class=“form-horizontal” action="" method="post">
 		
+	<input type="hidden" name="id" value="<?php echo $id; ?>">
+
 
 	<div class="text-warning lead">Enter new/Edit(dynamic) student's information</div>
 	<div class="text-danger">* indicates required field</div>
 	<br>
 
+
 	<div class="form-group">
 		<label class="control-label">Name *:</label>
 
 		<div class="form-inline">
-		<input class="col-sm-6 form-control" type="text" id="firstname" name="firstname" placeholder="firstname" required>
-		<input class="col-sm-6 form-control" type="text" id="lastname" name="lastname" placeholder="lastname" required>
+		<input class="col-sm-6 form-control" type="text" id="firstname" name="firstname" placeholder="firstname" value="<?php echo $firstname; ?>" required>
+		<input class="col-sm-6 form-control" type="text" id="lastname" name="lastname" placeholder="lastname" value="<?php echo $lastname; ?>" required>
 	</div>
 		
 	</div>
@@ -40,7 +56,7 @@
 	<div class="form-group">
 
 		<label class="control-label" for="link">Link *: </label>
-		<input class="form-control" type="text" id="link" name="link" placeholder="URL to the student's personal page" required><br>
+		<input class="form-control" type="text" id="link" name="link" placeholder="URL to the student's personal page" value="<?php echo $link; ?>" required><br>
 		
 
 	</div>
@@ -55,7 +71,7 @@
 
 
 		<label class="control-label" for="bio">Excerpt *:</label>
-		<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?" required></textarea>
+		<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?" value="<?php echo $bio; ?>" required></textarea>
 		<br>
 
 	</div>
@@ -67,7 +83,7 @@
 		<!-- <input type="file" name="image" accept="image/*" required> -->
 		<div class="form-group">
 		<label class="control-label" for="quote">Favorite Quote *:</label> 
-		<textarea class="form-control" id="quote" name="quote" rows="1" cols="25" placeholder="Favorite Quote" ></textarea>
+		<textarea class="form-control" id="quote" name="quote" rows="1" cols="25" placeholder="Favorite Quote" value="<?php echo $quote; ?>" ></textarea>
 		<br>
 	</div>
 
@@ -96,3 +112,6 @@
 
 </body>
 </html>
+<?php
+}
+?>
