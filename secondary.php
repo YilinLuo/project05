@@ -3,7 +3,7 @@
 
 
 	
-<a href="secondary-modify.php" class="modify-button" title="I view this as a developer tool. So I decide to put this button on the right side without destroying the look of centered actual centent">Modify Content</a>
+<a href="secondary-modify.php" class="modify-button" title="Login to access modify panel"><?php echo $_GET["tip"]?> Modify Content</a>
 
 <?php if(isset($_SESSION['username'])) { ?>
 	<!-- login to access the modify content -->
@@ -21,7 +21,7 @@
 			      <a href="logout.php">Logout</a>
 			    <?php } 
 			    else { ?>
-			      <a href="login.php">Login</a>
+			      <a href="login.php" title="Login to access modify panel">Login</a>
 			    <?php } ?>
 			</div>
 		</div>

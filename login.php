@@ -94,11 +94,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-    </style>
 
     <link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
@@ -129,6 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
+                <a href="index.php">cancel</a>
             </div>
 
             <p>Don't have an account? <a class="text-warning" href="register.php">Sign up now</a>.</p>
