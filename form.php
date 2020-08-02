@@ -8,19 +8,22 @@
 </head>
 <body>
 
-	<h1 class="text-center">New/Edit(dynamic) Student Information</h1><br>
+	<h1 class="text-center edit">New/Edit(dynamic) Student Information</h1><br>
+	<div class="newinfo">
 
 	<div class="container">	
 
+
 		<div class="row row-centered">
-		<div class="well col-md-6 col-centered">
+		<div class="col-md-6 col-centered">
 
 	
 	<!--use php to create dynamic h1, or create 2 forms(new info and edit info). Don't know which way would be implmented -->
 	<form class=“form-horizontal” role=“form” method="post">
+		
 
-	<div>Enter new/Edit(dynamic) student's information below and submit to create a new entry</div>
-	<div>* indicates required field</div>
+	<div class="text-warning lead">Enter new/Edit(dynamic) student's information</div>
+	<div class="text-danger">* indicates required field</div>
 	<br>
 
 	<div class="form-group">
@@ -75,10 +78,10 @@
 
 	</div>
 
-		<input class="btn pull-right" type="submit" name="submit" value="Submit">
-		<a class="btn pull-right" href=".">Cancel</a>
+		<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+		<a class="btn btn-danger" href=".">Cancel</a>
 
-		
+	</div>	
 
 	</form>
 </div>

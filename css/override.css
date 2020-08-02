@@ -27,6 +27,39 @@ body{
     text-align:left;
 }
 
+.edit{
+    color: #1F5A94;
+    font-family: 'Nunito', sans-serif;
+    padding-top:8px;
+    height:35px;
+}
+
+.newinfo{
+    border-bottom: solid 10px;
+    border-bottom-color: #cf1578;
+    background-color: #322e2f;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+.text-warning{
+    color: #e8d21d;
+}
+
+.btn-danger{
+    float: right;
+    background-color:#8a1f1f;
+    border-color:#8a1f1f;
+}
+
+.btn-primary{
+    background-color:#1F5A94;
+    border-color:#1F5A94;
+
+}
+
 .login{
 
 	background-color: #ffffff;
