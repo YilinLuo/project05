@@ -113,8 +113,8 @@ include "inc/html-top.php"; ?>
 
 							</div>
 
-							<input class="btn btn-primary float-right" type="submit" name="submit" value="Submit">
-							<a class="btn btn-danger float-left" href="secondary.php">Cancel</a>
+							<input class="btn btn-primary float-left" type="submit" name="submit" value="Submit">
+							<a class="btn btn-danger float-right" href="secondary.php">Cancel</a>
 
 						</div>	
 

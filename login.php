@@ -122,8 +122,8 @@ include "inc/html-top.php";
                             </div>
 
                             <div class="form-group row">
-                                <input type="submit" class="btn btn-primary float-right" value="Login">
-                                <a class = "btn btn-danger float-left cancelBtn" href="secondary.php">Cancel</a>
+                                <input type="submit" class="btn btn-primary float-left" value="Login">
+                                <a class = "btn btn-danger  cancelBtn float-right" href="secondary.php">Cancel</a>
                             </div>
 
                             <br>
