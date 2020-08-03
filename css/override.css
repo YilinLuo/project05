@@ -74,3 +74,8 @@ body{
 .http-prefix{
     padding-top: 5px;
 }
+
+.cancelBtn
+{
+    margin-right: 170px;
+}

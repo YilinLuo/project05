@@ -124,10 +124,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary float-right" value="Login">
-                <a class = "btn btn-danger float-left" href="secondary.php">Cancel</a>
+            <div class="form-group row">
+                <input type="submit" class="btn btn-primary" value="Login">
+                <a class = "btn btn-danger float-left cancelBtn" href="secondary.php">Cancel</a>
             </div>
+
+            <hr class="my-4">
 
             <div>
                 <p>Don't have an account? <a class="text-warning" href="register.php">Sign up now</a></p>
