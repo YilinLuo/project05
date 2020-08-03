@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 								echo $filename . " is already exists.";
 						} else{
 								move_uploaded_file($_FILES["photo"]["tmp_name"], "./images/" . $filename);
-								echo "Your file was uploaded successfully.";
+								// echo "Your file was uploaded successfully.";
 						} 
 				} else{
 						echo "Error: There was a problem uploading your file. Please try again."; 

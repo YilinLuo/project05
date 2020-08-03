@@ -8,8 +8,6 @@ $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bo
 
 <link rel='stylesheet' href='css/override.css'>";
 
-include "inc/html-top.php";
-
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -100,6 +98,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($connection);
 }
 ?>
+
+<?php include "inc/html-top.php"; ?>
 
     <div class="container">
         <div class="row row-centered">

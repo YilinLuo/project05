@@ -8,8 +8,9 @@
 	$customCSS = "<link rel='stylesheet' href='css/styles.css'>
 		<link rel='stylesheet' href='css/navigation.css'>";
 
-	include "inc/html-top.php"; 
 ?>
+
+<?php include "inc/html-top.php"; ?>
 
 <a href="secondary-modify.php" class="modify-button" title=""><?php echo $_GET["tip"]?> Modify Content</a>
 

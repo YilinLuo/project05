@@ -1,14 +1,6 @@
 <?php
 // Initialize the session
 session_start();
-
-    $customTitle = "Login Page";
-
-    $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
-
-    <link rel='stylesheet' href='css/override.css'>";
-
-    include "inc/html-top.php";
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -95,6 +87,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($connection);
 }
+
+$customTitle = "Login Page";
+
+$customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
+
+<link rel='stylesheet' href='css/override.css'>";
+
+include "inc/html-top.php";
+
 ?>
 
     <div class="container">
