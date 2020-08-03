@@ -4,7 +4,8 @@ require_once "connect-db.php";
  
 $customTitle = "Sign Up";
 
-$customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
+$customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
+integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
 
 <link rel='stylesheet' href='css/override.css'>";
 
@@ -97,9 +98,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($connection);
 }
-?>
 
-<?php include "inc/html-top.php"; ?>
+    include "inc/html-top.php";
+?>
 
     <div class="container">
         <div class="row row-centered">

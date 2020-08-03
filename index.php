@@ -1,6 +1,7 @@
-<?php $customCSS = "<link rel='stylesheet' type='text/css' href='css/home.css'>"; ?>
-
-<?php include "inc/html-top.php" ?>
+<?php 
+$customCSS = "<link rel='stylesheet' type='text/css' href='css/home.css'>"; 
+include "inc/html-top.php";
+?>
 
 
 	<section class="upper-left">
@@ -43,8 +44,6 @@
 			<a href="secondary.php">Our Team</a>
 		</div>
 	</section>
-
-
 
 </body>
 </html>

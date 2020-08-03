@@ -75,7 +75,6 @@
 	</p>
 </footer>
 
-
 <?php include "inc/scripts.php"; ?>
 </body>
 </html>
