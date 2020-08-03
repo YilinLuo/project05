@@ -96,8 +96,8 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 
 	</div>
 
-		<input class="btn btn-primary" type="submit" name="submit" value="Submit">
-		<a class="btn btn-danger" href=".">Cancel</a>
+		<input class="btn btn-primary float-right" type="submit" name="submit" value="Submit">
+		<a class="btn btn-danger float-left" href=".">Cancel</a>
 
 	</div>	
 
