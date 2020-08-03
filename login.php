@@ -126,11 +126,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             </div>
 
                             <div class="form-group row">
-                                <input type="submit" class="btn btn-primary" value="Login">
+                                <input type="submit" class="btn btn-primary float-right" value="Login">
                                 <a class = "btn btn-danger float-left cancelBtn" href="secondary.php">Cancel</a>
                             </div>
 
-                            <hr>
+                            <br>
 
                             <div>
                                 <p>Don't have an account? <a class="text-warning" href="register.php">Sign up now</a></p>

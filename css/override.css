@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 body{
 	background: url(../images/bg3.png) no-repeat;
 	background-size:cover;
+    font-family: 'PT Sans', sans-serif;
 }  
  
  .container{
@@ -41,7 +46,6 @@ body{
 }
 
 .btn-danger{
-    float: right;
     background-color:#8a1f1f;
     border-color:#8a1f1f;
 }
@@ -54,6 +58,7 @@ body{
 
 .title{
     color: #e8d21d;
+    font-family: 'Nunito', sans-serif;
 }
 
 .login, .signup{
@@ -77,10 +82,6 @@ body{
 
 .cancelBtn
 {
-    margin-right: 170px;
+    margin-right: 190px;
 }
 
-.body-text
-{
-    font: 14px sans-serif;
-}

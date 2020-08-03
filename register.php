@@ -105,7 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 </head>
 
-<body class = "body-text">
+<body>
 
     <div class="container">
         <div class="row row-centered">
@@ -140,7 +140,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <input type="reset" class="btn btn-danger float-left" value="Reset">
                         </div>
 
-                         <br><br><br><br>
+                         <br><br>
 
                         <div>
                             <p>Already have an account? <a class="text-warning" href="login.php">Login here</a></p>
