@@ -46,8 +46,8 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 		<label class="control-label">Name *:</label>
 
 		<div class="form-inline">
-		<input class="col-sm-6 form-control" type="text" id="firstname" name="firstname" placeholder="firstname" value="<?php echo $firstname; ?>" required>
-		<input class="col-sm-6 form-control" type="text" id="lastname" name="lastname" placeholder="lastname" value="<?php echo $lastname; ?>" required>
+		<input class="col-sm-6 form-control" type="text" id="firstname" name="firstname" placeholder="First name" value="<?php echo $firstname; ?>" required>
+		<input class="col-sm-6 form-control" type="text" id="lastname" name="lastname" placeholder="Last name" value="<?php echo $lastname; ?>" required>
 	</div>
 		
 	</div>
@@ -58,7 +58,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 		<label class="control-label" for="link">Link *: </label>
 		<div class="form-row">
 			<div class="col-sm-1.5 http-prefix">https://</div>
-			<input class="d-inline form-control col-sm-10" type="text" id="link" name="link" placeholder="link to the student's personal page. Don't include 'https://'" value="<?php echo $link; ?>" required><br>
+			<input class="d-inline form-control col-sm-10" type="text" id="link" name="link" placeholder="link to personal page. Don't include 'https://'" value="<?php echo $link; ?>" required><br>
 		</div>
 
 	</div>
@@ -73,7 +73,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error) {
 
 
 		<label class="control-label" for="bio">Excerpt *:</label>
-		<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about this student. &NewLine;Name?Major?Membership?Achievement?Hobby?"  required><?php echo $bio; ?></textarea>
+		<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about the student. &NewLine;Examples: Name? Major? Membership? Achievements? Hobies?"  required><?php echo $bio; ?></textarea>
 		<br>
 
 	</div>
