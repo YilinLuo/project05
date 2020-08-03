@@ -8,6 +8,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id']))
 	// get id value
 	$id = $_GET['id'];
 
+	$pic_data = mysqli_query($connection, "SELECT pic FROM picwithname WHERE id=$id");
+	$pic=mysqli_fetch_array($pic_data)['pic'];
+	unlink(realpath($pic));
+	
 	// delete the entry
 	$result = mysqli_query($connection, "DELETE FROM students WHERE id=$id");
 

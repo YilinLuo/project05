@@ -1,8 +1,12 @@
 <?php
+$formTitle = "Update";
+
 include('form.php');
 
 // connect to the database
 include('connect-db.php');
+
+include('uploadfile.php');
 
 // check if the form (from renderform.php) has been submitted. If it has, process the form and save it to the database
 if (isset($_POST['submit'])) 
@@ -18,20 +22,33 @@ if (isset($_POST['submit']))
 		$link = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
 		$bio = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
 
+		if (isset($_POST['photo-change']) && $_POST['photo-change']== '1')
+		{
+			$pic = handleFile();
+		} 
+		else 
+		{
+			if (isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] > 0) 
+			{
+				$id = $_GET['id'];
+				$pic_data = mysqli_query($connection, "SELECT pic FROM students WHERE id=$id");
+				$pic=mysqli_fetch_array($pic_data)['pic'];
+			}
+		}
+
 		// check that firstname/lastname fields are both filled in
-		if ($firstname == '' || $lastname == '' || $quote == '' || $link == '' || $bio == '') 
+		if ($firstname == '' || $lastname == '' || $quote == '' || $link == '' || $bio == '' || $pic == '') 
 		{
 			// generate error message
 			$error = 'ERROR: Please fill in all required fields!';
 
 			//error, display form
-			renderForm($id, $firstname, $lastname, $quote, $link, $bio, $error);
-
+			renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $error, $formTitle);
 		} 
 		else 
 		{
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', quote='$quote', link='$link', bio='$bio' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', quote='$quote', link='$link', bio='$bio', pic='$pic' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: secondary.php");
@@ -63,9 +80,10 @@ else
 			$quote = $row['quote'];
 			$link = $row['link'];
 			$bio = $row['bio'];
+			$pic = $row['pic'];
 
 			// show form
-			renderForm($id, $firstname, $lastname, $quote, $link, $bio, '');
+			renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, '', $formTitle);
 		} 
 		else 
 		{

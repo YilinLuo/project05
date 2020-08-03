@@ -39,6 +39,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 			<?php while($data = mysqli_fetch_array($result)) {?>
 				<div class="grid">
 
+					<!-- <?php echo $data['pic']; ?> -->
+					<img src="<?php echo $data['pic']; ?>" alt="">
+
+
 					<div class = "intrf">
 						<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
 						<p><?php echo $data["bio"];?></p>
