@@ -106,7 +106,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <div class="login">
         
-        <form class=“form-horizontal” role=“form” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class=“form-horizontal” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
             <h1 class="text-center title">Login</h1>
         <p class="lead">Please fill in your credentials to login.</p>
