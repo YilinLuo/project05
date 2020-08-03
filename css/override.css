@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+
+/* Base Style */
 body{
 	background: url(../images/bg3.png) no-repeat;
 	background-size:cover;
     font-family: 'PT Sans', sans-serif;
 }  
- 
+
+/* Layout */
 .container
 {
     display:table;
@@ -32,6 +35,9 @@ body{
     float:none;
     text-align:left;
 }
+
+
+/* Modules */
 
 .edit
 {
@@ -92,3 +98,4 @@ body{
 {
     margin-right: 190px;
 }
+
