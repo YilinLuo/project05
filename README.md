@@ -7,7 +7,9 @@
 - Bo Wu (IA)
 
 ### Visual Designer
-
+- Use the Bootstrap framework
+- Decorate form.php, login.php, and register.php
+- Using the same backgroud image, fonts, colors, and styles with the original websites
 
 ### Technician
 - Set up the database on the class server
