@@ -173,13 +173,12 @@ footer .footer a:hover{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 }
-.intrp h3{
-	padding-top: 5px;
 
-	color: #cf1578;
-}
 .intrp p{
-	padding-top: 50px;
+	position: relative;
+	top: 45%;
+	transform: translate(0, -50%);
+
     font-size: 1.15em;
     font-weight: 600;
 }

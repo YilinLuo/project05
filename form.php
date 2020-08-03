@@ -19,7 +19,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $erro
 		}
 	?>
 
-	<h1 class="text-center edit">New/Edit(dynamic) Student Information</h1>
+	<h1 class="text-center edit"><?php echo $formTitle?> Student Information</h1>
 	
 	<br>
 	
@@ -36,7 +36,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $erro
 		
 							<input type="hidden" name="id" value="<?php echo $id; ?>">
 
-							<div class="text-warning lead">Enter new/Edit(dynamic) student's information</div>
+							<div class="text-warning lead"><?php echo $formTitle?> student's information</div>
 							<div class="text-danger">* indicates required field</div>
 						
 							<br>

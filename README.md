@@ -20,4 +20,5 @@
 - Cleaned up PHP, added PHP includes
 
 ### IA
-
+- Create form
+- ontology, taxonomy, choreography of login and modify system
