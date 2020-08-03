@@ -1,12 +1,6 @@
 <?php
-	$dbhost = "66.147.242.186";
-    $dbuser = "urcscon3_london";
-    $dbpass = "coffee1N/21!";
-    $dbname = "urcscon3_london";
-    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
-    $query  = "SELECT * FROM students";
-    $result = mysqli_query($connection, $query);
+	include('connect-db.php');
 
 // Initialize the session
 session_start();

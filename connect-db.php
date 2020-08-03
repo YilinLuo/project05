@@ -7,6 +7,10 @@ $db = 'urcscon3_london';
 
 // Connect to Database
 $connection = mysqli_connect($server,$user,$pass,$db);
+
+$query  = "SELECT * FROM students";
+$result = mysqli_query($connection, $query);
+
 if (!$connection) 
 {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
