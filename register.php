@@ -114,7 +114,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         
 
-        <form class=“form-horizontal” role=“form” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class=“form-horizontal” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
             <h1 class="text-center title">Sign Up</h1>
         <p class="lead">Please fill this form to create an account.</p>
@@ -138,11 +138,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
 
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
+                <input type="submit" class="btn btn-primary float-right" value="Submit">
+                <input type="reset" class="btn btn-danger float-left" value="Reset">
             </div>
 
-            <p>Already have an account? <a class="text-warning" href="login.php">Login here</a>.</p>
+            <br><br><br><br>
+            
+            <div>
+                <p>Already have an account? <a class="text-warning" href="login.php">Login here</a></p>
+            </div>
+
         </form>
      </div>   
     </div>
