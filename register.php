@@ -2,6 +2,14 @@
 // Include config file
 require_once "connect-db.php";
  
+$customTitle = "Sign Up";
+
+$customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
+
+<link rel='stylesheet' href='css/override.css'>";
+
+include "inc/html-top.php";
+
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -92,14 +100,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($connection);
 }
 ?>
- 
-<?php $customTitle = "Sign Up"; ?>
-
-<?php $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
-
-<link rel='stylesheet' href='css/override.css'>"; ?>
-
-<?php include "inc/html-top.php" ?>
 
     <div class="container">
         <div class="row row-centered">

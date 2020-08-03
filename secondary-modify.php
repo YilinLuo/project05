@@ -1,23 +1,24 @@
-<?php $customTitle = "Modify"; ?>
-
-<?php $customCSS = "<link rel='stylesheet' href='css/styles.css'>
-		<link rel='stylesheet' href='css/navigation.css'>"; ?>
-
 <?php
+
+	// Initialize the session
+	session_start();
 
 	include('connect-db.php');
 
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: secondary.php?tip=Login Before");
-    exit;
-}
-?>
+	// Check if the user is logged in, if not then redirect him to login page
+	if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
+	{
+    	header("location: secondary.php?tip=Login Before");
+    	exit;
+	}
 
-<?php include "inc/html-top.php"; ?>
+	$customTitle = "Modify";
+
+	$customCSS = "<link rel='stylesheet' href='css/styles.css'>	
+		<link rel='stylesheet' href='css/navigation.css'>";
+
+	include "inc/html-top.php";
+?>
 
 <article>
 	<header class="blacktop2">

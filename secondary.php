@@ -1,12 +1,12 @@
-<?php $customTitle = "Student List"; ?>
-
-<?php $customCSS = "<link rel='stylesheet' href='css/styles.css'>
-		<link rel='stylesheet' href='css/navigation.css'>"; ?>
-
 <?php
 	session_start();
 
 	include('connect-db.php');
+
+	$customTitle = "Student List";
+
+	$customCSS = "<link rel='stylesheet' href='css/styles.css'>
+		<link rel='stylesheet' href='css/navigation.css'>";
 
 	include "inc/html-top.php"; 
 ?>
