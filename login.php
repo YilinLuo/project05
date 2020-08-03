@@ -88,19 +88,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($connection);
 }
 ?>
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-    <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/override.css">
+<?php $customTitle = "Login Page"; ?>
 
-</head>
+<?php $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
 
-<body>
+<link rel='stylesheet' href='css/override.css'>"; ?>
+
+<?php include "inc/html-top.php" ?>
 
     <div class="container">
         <div class="row row-centered">
