@@ -11,7 +11,6 @@ $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bo
 
 include "inc/html-top.php"; ?>
 
-<body>
 	<?php
 		// if there are any errors, display them
 		if ($error != '') {
