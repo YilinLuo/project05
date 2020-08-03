@@ -130,8 +130,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary float-right" value="Submit">
-                            <input type="reset" class="btn btn-danger float-left" value="Reset">
+                            <input type="submit" class="btn btn-primary float-left" value="Submit">
+                            <input type="reset" class="btn btn-danger float-right" value="Reset">
                         </div>
 
                          <br><br>
