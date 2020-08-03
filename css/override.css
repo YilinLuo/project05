@@ -79,3 +79,8 @@ body{
 {
     margin-right: 170px;
 }
+
+.body-text
+{
+    font: 14px sans-serif;
+}

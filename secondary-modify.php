@@ -14,9 +14,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <?php include "inc/html-top.php"; ?>
 
-
-
-
 <article>
 	<header class="blacktop2">
 		<div class = "blackcontent">
@@ -37,32 +34,33 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 	<div class="container">
 
-	<h1 class="London">London</h1>
+		<h1 class="London">London</h1>
 
-	<?php while($data = mysqli_fetch_array($result)) {?>
-		<div class="grid">
+			<?php while($data = mysqli_fetch_array($result)) {?>
+				<div class="grid">
 
-			<div class = "intrf">
-				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
-				<p><?php echo $data["bio"];?></p>
-			</div> 
-				
-			<div class="intrp">
-					<p><?php echo $data["quote"];?></p>
-			</div> 
+					<div class = "intrf">
+						<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
+						<p><?php echo $data["bio"];?></p>
+					</div> 
+						
+					<div class="intrp">
+							<p><?php echo $data["quote"];?></p>
+					</div> 
 
-			<div class="rdmore">
-				<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
+					<div class="rdmore">
+						<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
 
-				<div>
-					<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
-	    			<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
+						<div>
+							<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
+							<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
+						</div> 
+					</div>
 				</div> 
-			</div>
-		</div> 
-    <?php } ?>
+			<?php } ?>
 
 	</div> 
+
  </article>
 
 
@@ -73,5 +71,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 <?php include "inc/scripts.php"; ?>
+
 </body>
+
 </html>

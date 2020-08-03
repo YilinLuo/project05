@@ -92,58 +92,59 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+    <link rel="stylesheet" href="css/override.css">
 
-    <link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
+
 <body>
+
     <div class="container">
         <div class="row row-centered">
-        <div class="col-centered">
+            <div class="col-centered">
 
-            <div class="login">
+                <div class="login">
         
-        <form class=“form-horizontal” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <form class=“form-horizontal” action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <h1 class="text-center title">Login</h1>
-        <p class="lead">Please fill in your credentials to login.</p>
+                        <h1 class="text-center title">Login</h1>
+                            <p class="lead">Please fill in your credentials to login.</p>
 
-            <div class="form-group <?php echo (!empty($username_err)) ? 
-            'has-error' : ''; ?>">
-                <label class="control-label">Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>  
+                            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                                <label class="control-label">Username</label>
+                                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                                <span class="help-block"><?php echo $username_err; ?></span>
+                            </div>  
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label class="control-label" >Password</label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
+                            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                                <label class="control-label" >Password</label>
+                                <input type="password" name="password" class="form-control">
+                                <span class="help-block"><?php echo $password_err; ?></span>
+                            </div>
+
+                            <div class="form-group row">
+                                <input type="submit" class="btn btn-primary" value="Login">
+                                <a class = "btn btn-danger float-left cancelBtn" href="secondary.php">Cancel</a>
+                            </div>
+
+                            <hr>
+
+                            <div>
+                                <p>Don't have an account? <a class="text-warning" href="register.php">Sign up now</a></p>
+                            </div>
+
+                    </form>
+                </div>
             </div>
-
-            <div class="form-group row">
-                <input type="submit" class="btn btn-primary" value="Login">
-                <a class = "btn btn-danger float-left cancelBtn" href="secondary.php">Cancel</a>
-            </div>
-
-            <hr class="my-4">
-
-            <div>
-                <p>Don't have an account? <a class="text-warning" href="register.php">Sign up now</a></p>
-            </div>
-
-        </form>
+        </div>
     </div>
-</div>
-</div>
-</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
 </body>
 </html>
