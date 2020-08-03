@@ -1,3 +1,6 @@
+<?php $customCSS = "<link rel='stylesheet' href='css/styles.css'>
+		<link rel='stylesheet' href='css/navigation.css'>"; ?>
+
 <?php
 
 	include('connect-db.php');
@@ -40,16 +43,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 				<div class="grid">
 
 					<!-- <?php echo $data['pic']; ?> -->
-					<img src="<?php echo $data['pic']; ?>" alt="">
+					<!-- <img src="<?php echo $data['pic']; ?>" alt=""> -->
 
 
 					<div class = "intrf">
 						<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
-						<p><?php echo $data["bio"];?></p>
+						<figure>
+							<img src="<?php echo $data['pic']; ?>" alt="">
+							<figcaption><?php echo $data["quote"];?></figcaption>
+						</figure>
 					</div> 
 						
 					<div class="intrp">
-							<p><?php echo $data["quote"];?></p>
+						<p><?php echo $data["bio"];?></p>
+
+						<!-- <p><?php echo $data["quote"];?></p> -->
 					</div> 
 
 					<div class="rdmore">

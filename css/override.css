@@ -8,34 +8,41 @@ body{
     font-family: 'PT Sans', sans-serif;
 }  
  
- .container{
+.container
+{
     display:table;
     height:100%;
 }
 
-.row{
+.row
+{
     display: table-cell;
     vertical-align: middle;
 }
 
 /* centered columns styles */
-.row-centered {
+.row-centered 
+{
     text-align:center;
 }
-.col-centered {
+
+.col-centered 
+{
     display:inline-block;
     float:none;
     text-align:left;
 }
 
-.edit{
+.edit
+{
     color: #1F5A94;
     font-family: 'Nunito', sans-serif;
     padding-top:8px;
     height:35px;
 }
 
-.newinfo{
+.newinfo
+{
     border-bottom: solid 10px;
     border-bottom-color: #cf1578;
     background-color: #322e2f;
@@ -45,38 +52,39 @@ body{
     margin:0;
 }
 
-.btn-danger{
+.btn-danger
+{
     background-color:#8a1f1f;
     border-color:#8a1f1f;
 }
 
-.btn-primary{
+.btn-primary
+{
     background-color:#1F5A94;
     border-color:#1F5A94;
 
 }
 
-.title{
+.title
+{
     color: #e8d21d;
     font-family: 'Nunito', sans-serif;
 }
 
-.login, .signup{
-
+.login, .signup
+{
 	background-color: #322e2f;
     padding: 50px;
-    
     margin-top: 100px;
     border: solid 10px;
     border-color: #cf1578;
     box-shadow: 10px 10px 10px;
     color:white;
     box-shadow: #cf1578 5px 5px 20px;
-
 }
 
-
-.http-prefix{
+.http-prefix
+{
     padding-top: 5px;
 }
 
@@ -84,4 +92,3 @@ body{
 {
     margin-right: 190px;
 }
-

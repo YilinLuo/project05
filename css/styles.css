@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 /*******************************BASE STYLES*************************************/
+img
+{
+	height: auto;
+	max-width: 100%;
+}
+figcaption
+{
+    line-height: 24px;
+}
 
 body {
 	background: #FFFFFF;
@@ -169,8 +179,7 @@ footer .footer a:hover{
 	color: #cf1578;
 }
 .intrp p{
-	padding-top: 80px;
-
+	padding-top: 50px;
     font-size: 1.15em;
     font-weight: 600;
 }

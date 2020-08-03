@@ -3,38 +3,13 @@
 function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $error, $formTitle) {
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>form</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  	<link rel="stylesheet" href="css/override.css">
+<?php $customTitle = "Form"; ?>
 
-	  <?php if($formTitle == "Update") { ?>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-		<script>
-			$(document).ready(function(){
-				$("form div input[type='file']").prop("type", "hidden");
-				document.getElementById("photo-label").hidden = true;
-				document.getElementById("photo-label").style = "display:none";
-				$(".photo-change").click(function(){
-					if($(this).prop("checked") == true){
-						$("form div input[type='hidden']").prop("type", "file");
-						document.getElementById("photo-label").hidden = false;
-						document.getElementById("photo-label").style = "display:block";
-					}
-					else if($(this).prop("checked") == false){
-						$("form div input[type='file']").prop("type", "hidden");
-						 document.getElementById("photo-label").hidden = true;
-						 document.getElementById("photo-label").style = "display:none";
-					}
-				});
-			});
-		</script>
-	<?php } ?>
+<?php $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'  integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
 
-</head>
+<link rel='stylesheet' href='css/override.css'>"; ?>
+
+<?php include "inc/html-top.php" ?>
 
 <body>
 	<?php
@@ -139,7 +114,7 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $erro
 							</div>
 
 							<input class="btn btn-primary float-right" type="submit" name="submit" value="Submit">
-							<a class="btn btn-danger float-left" href=".">Cancel</a>
+							<a class="btn btn-danger float-left" href="secondary.php">Cancel</a>
 
 						</div>	
 
@@ -150,9 +125,31 @@ function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $erro
 	</div>
 
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<?php include "inc/scripts.php" ?>
+
+	<?php if($formTitle == "Update") { ?>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$("form div input[type='file']").prop("type", "hidden");
+				document.getElementById("photo-label").hidden = true;
+				document.getElementById("photo-label").style = "display:none";
+				$(".photo-change").click(function(){
+					if($(this).prop("checked") == true){
+						$("form div input[type='hidden']").prop("type", "file");
+						document.getElementById("photo-label").hidden = false;
+						document.getElementById("photo-label").style = "display:block";
+					}
+					else if($(this).prop("checked") == false){
+						$("form div input[type='file']").prop("type", "hidden");
+						 document.getElementById("photo-label").hidden = true;
+						 document.getElementById("photo-label").style = "display:none";
+					}
+				});
+			});
+		</script>
+	<?php } ?>
+
 
 </body>
 

@@ -1,4 +1,7 @@
-<?php include "inc/home-html-top.php" ?>
+<?php $customCSS = "<link rel='stylesheet' type='text/css' href='css/home.css'>"; ?>
+
+<?php include "inc/html-top.php" ?>
+
 
 	<section class="upper-left">
 		<img src="images/logo.png" alt="csc 174">
