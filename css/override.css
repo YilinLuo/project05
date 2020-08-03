@@ -46,7 +46,6 @@ body{
 }
 
 .btn-danger{
-    float: right;
     background-color:#8a1f1f;
     border-color:#8a1f1f;
 }
@@ -83,10 +82,6 @@ body{
 
 .cancelBtn
 {
-    margin-right: 170px;
+    margin-right: 190px;
 }
 
-.body-text
-{
-    font: 14px sans-serif;
-}
