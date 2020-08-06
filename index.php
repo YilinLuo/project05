@@ -1,5 +1,6 @@
 <?php 
 $customCSS = "<link rel='stylesheet' type='text/css' href='css/home.css'>"; 
+session_start();
 include "inc/html-top.php";
 ?>
 

@@ -1,4 +1,7 @@
 <?php
+
+session_start(); 
+
 // creates the edit record form
 function renderForm($id, $firstname, $lastname, $quote, $link, $bio, $pic, $error, $formTitle) {
 ?>
