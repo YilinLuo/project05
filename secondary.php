@@ -11,8 +11,9 @@
 ?>
 
 <?php include "inc/html-top.php"; ?>
-
+  <?php if(isset($_SESSION['username'])) { ?>
 <a href="secondary-modify.php" class="modify-button" title=""><?php echo $_GET["tip"]?> Modify Content</a>
+<?php } ?>
 
 <article>
 	<header class="blacktop2">
