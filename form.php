@@ -116,7 +116,7 @@ include "inc/html-top.php"; ?>
 							</div>
 
 							<input class="btn submit_button float-left" type="submit" name="submit" value="Submit">
-							<a class="btn cancel_button float-right" href="secondary.php">Cancel</a>
+							<a class="btn cancel_button float-right" href="studentlist.php">Cancel</a>
 
 						</div>	
 

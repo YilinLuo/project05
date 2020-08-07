@@ -10,7 +10,7 @@ $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bo
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: secondary.php");
+  header("location: studentlist.php");
   exit;
 }
  
@@ -71,7 +71,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            header("location: secondary.php");
+                            header("location: studentlist.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -123,7 +123,7 @@ include "inc/html-top.php";
 
                             <div class="form-group row">
                                 <input type="submit" class="btn submit_button float-left" value="Login">
-                                <a class = "btn cancel_button float-right login_cancel" href="secondary.php">Cancel</a>
+                                <a class = "btn cancel_button float-right login_cancel" href="studentlist.php">Cancel</a>
                             </div>
 
                             <br>

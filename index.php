@@ -42,7 +42,7 @@ include "inc/html-top.php";
 
 	<section class="bottom-right">
 		<div class="team-reference">
-			<a href="secondary.php">Our Team</a>
+			<a href="studentlist.php">Our Team</a>
 		</div>
 	</section>
 

@@ -8,7 +8,7 @@
 	// Check if the user is logged in, if not then redirect him to login page
 	if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
 	{
-    	header("location: secondary.php?tip=Login Before");
+    	header("location: studentlist.php?tip=Login Before");
     	exit;
 	}
 
@@ -77,7 +77,7 @@
 	<?php if(isset($_SESSION['username'])) { ?>
 	<a href="new.php" class="new" title="Add new student's information">Add New Entry</a>
 	<?php } ?>
-	<a href="secondary.php" class="done-button" title="Done with modify. Back to original page.">Done</a>
+	<a href="studentlist.php" class="done-button" title="Done with modify. Back to original page.">Done</a>
 </footer>
 
 

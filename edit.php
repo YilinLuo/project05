@@ -60,7 +60,7 @@ if (isset($_POST['submit']))
 			$result = mysqli_query($connection, "UPDATE students SET firstname='$firstname', lastname='$lastname', quote='$quote', link='$link', bio='$bio', pic='$pic' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
-			header("Location: secondary.php");
+			header("Location: studentlist.php");
 		}
 	} 
 	else 

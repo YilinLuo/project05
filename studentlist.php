@@ -15,7 +15,7 @@
 <a href="secondary-modify.php" class="modify-button" title=""><?php echo $_GET["tip"]?> Modify Content</a>
 <?php } ?>
 
-<article>
+<article> 
 	<header class="heading">
 		<div class = "heading_content">
 			<div class="homebtn">

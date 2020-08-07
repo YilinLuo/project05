@@ -43,7 +43,7 @@ if (isset($_POST['submit']))
 		$result = mysqli_query($connection, "INSERT INTO students (firstname, lastname, quote, link, bio, pic) VALUES ('$firstname', '$lastname', '$quote', '$link', '$bio', '$pic')");
 
 		// once saved, redirect back to the view page
-		header("Location: secondary.php");
+		header("Location: studentlist.php");
 	}
 } 
 else 
