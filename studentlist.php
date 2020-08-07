@@ -1,21 +1,19 @@
 <?php
+
+	// Initialize the session
 	session_start();
 
 	include('connect-db.php');
 
 	$customTitle = "Student List";
 
-	$customCSS = "<link rel='stylesheet' href='css/styles.css'>
+	$customCSS = "<link rel='stylesheet' href='css/styles.css'>	
 		<link rel='stylesheet' href='css/navigation.css'>";
 
+	include "inc/html-top.php";
 ?>
 
-<?php include "inc/html-top.php"; ?>
-  <?php if(isset($_SESSION['username'])) { ?>
-<a href="secondary-modify.php" class="modify-button" title=""><?php echo $_GET["tip"]?> Modify Content</a>
-<?php } ?>
-
-<article> 
+<article>
 	<header class="heading">
 		<div class = "heading_content">
 			<div class="homebtn">
@@ -35,46 +33,53 @@
 
 	<div class="container">
 
-	<h1 class="london">London</h1>
+		<h1 class="london">London</h1>
 
-	<?php while($data = mysqli_fetch_assoc($result)) { ?>
-   
-		<div class="grid">
+			<?php while($data = mysqli_fetch_array($result)) {?>
+				<div class="grid">
 
-			<!-- <?php echo $data['pic']; ?> -->
+					<div class = "name_pic_column">
+						<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
+						<figure>
+							<img src="<?php echo $data['pic']; ?>" alt="">
+							<figcaption><?php echo $data["quote"];?></figcaption>
+						</figure>
+					</div> 
+						
+					<div class="bio_column">
+						<p><?php echo $data["bio"];?></p>
+					</div> 
 
-			<div class = "name_pic_column">
-				<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
-					<figure>
-						<img src="<?php echo $data['pic']; ?>" alt="">
-						<figcaption><?php echo $data["quote"];?></figcaption>
-					</figure>
-			</div> 
-				
-			<div class="bio_column">
-				<p><?php echo $data["bio"];?></p>
-
-				<!-- <p><?php echo $data["quote"];?></p> -->
-			</div> 
-
-			<div class="readmore_column">
-				<a class="read-more" target=_blank href="https://<?php echo $data["link"];?>">Read More!</a>
-			</div> 
-
-		</div> 
-
-    <?php } ?>
-
+					<div class="readmore_column">
+						<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
+						<div>
+							<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
+							<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
+						</div> 
+					</div>
+				</div> 
+<?php } ?>
 	</div> 
+
  </article>
 
 
+
 <footer>
-	<p class="footer">
-	CSC 174: Advanced Front-end Web Design and Development -
-	<a href="http://docs.csc174.org" target=_blank>Course home page</a>
-	</p>
+	<!-- if logged in, footer allows a user to make a new account. If not logged in,
+		user (visitor) can visit Course Documentation website -->
+	<?php
+	if(isset($_SESSION['username'])) { ?>
+		<a href="new.php" class="new" title="Add new student's information">Add New Entry</a>
+	<?php } else { ?>
+		<p class="footer">
+		CSC 174: Advanced Front-end Web Design and Development -
+		<a href="http://docs.csc174.org" target=_blank>Course home page</a>
+		</p>
+	<?php } ?>
 </footer>
+
+
 
 <?php include "inc/scripts.php"; ?>
 </body>
