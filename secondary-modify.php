@@ -21,13 +21,13 @@
 ?>
 
 <article>
-	<header class="blacktop2">
-		<div class = "blackcontent">
+	<header class="heading">
+		<div class = "heading_content">
 			<div class="homebtn">
 				<a href="index.php">Home</a>
 			</div>
 
-			<div class="secondary-login">
+			<div class="studentlist_login">
 				<?php if(isset($_SESSION['username'])) { ?>
 			      <a href="logout.php">Logout</a>
 			    <?php } 
@@ -40,12 +40,12 @@
 
 	<div class="container">
 
-		<h1 class="London">London</h1>
+		<h1 class="london">London</h1>
 
 			<?php while($data = mysqli_fetch_array($result)) {?>
 				<div class="grid">
 
-					<div class = "intrf">
+					<div class = "name_pic_column">
 						<h2><?php echo $data["firstname"], " ", $data["lastname"];?></h2>
 						<figure>
 							<img src="<?php echo $data['pic']; ?>" alt="">
@@ -53,11 +53,11 @@
 						</figure>
 					</div> 
 						
-					<div class="intrp">
+					<div class="bio_column">
 						<p><?php echo $data["bio"];?></p>
 					</div> 
 
-					<div class="rdmore">
+					<div class="readmore_column">
 						<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
  <?php if(isset($_SESSION['username'])) { ?>
 						<div>

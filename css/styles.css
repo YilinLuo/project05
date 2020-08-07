@@ -115,39 +115,6 @@ footer .footer a:hover{
 }
 /*********************LAYOUT*************************************/
 
-
-.grida {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 80px;
-}
-
-.gridi {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-}
-
-.Fun{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(1, 1fr);
-	grid-column-gap: 80px;
-}
-
-.Fun .fav{
-	grid-row: 1;
-	grid-column: 1;
-}
-
-.Fun .pets{
-	grid-row: 1;
-	grid-column: 2;
-}
-
-.accordion{
-	padding-top: 20px;
-}
 .grid{
 	display: grid;
 	grid-template-columns: 1.2fr 1.3fr 1.05fr;
@@ -157,24 +124,24 @@ footer .footer a:hover{
 }
 
 
-.intrf{
+.name_pic_column{
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 }
-.intrf h2{
+.name_pic_column h2{
 	margin-bottom: 10px;
 }
 
-.intrf p{
+.name_pic_column p{
 	padding-right: 10px;
     font-size: 1.2em;
 }
-.intrp{
+.bio_column{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 }
 
-.intrp p{
+.bio_column p{
 	position: relative;
 	top: 45%;
 	transform: translate(0, -50%);
@@ -185,32 +152,32 @@ footer .footer a:hover{
 
 
 
-.rdmore{
+.readmore_column{
 	grid-column: 3 / 4;
 	grid-row: 1 / 2;
 
 	display: flex;
 }
-.rdmore a.read-more{
+.readmore_column a.read-more{
 	flex: 0 0 auto;
 	height: fit-content;
 
 	position: relative;
 	top: 45%;
 }
-.rdmore div{
+.readmore_column div{
 	margin-left: 14%;
 
 	font-size: 1.2em;
 }
-.rdmore a.delete{
+.readmore_column a.delete{
 	display: block;
 	position: relative;
 	top: 50%;
 
 	color: #12a4d9;
 }
-.rdmore a.edit{
+.readmore_column a.edit{
 	display: block;
 	position: relative;
 	top: 35%;
@@ -218,13 +185,6 @@ footer .footer a:hover{
 	color: #12a4d9;
 }
 
-
-.Academics{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 50px;
-	grid-row-gap: 0px;
-}
 
 .ac{
 	grid-column: 1;
@@ -249,45 +209,8 @@ footer .footer a:hover{
 	margin-left: 0px; /*align img and heading on the same vertical line*/
 }
 
-.classes .accordion .cs:hover{
-	color: #1F5A94;
-}
 
-.Academics h3{
-	background-color: #e9eaea;
-	padding: 10px 0px 10px 15px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	border-bottom: 0.5px solid slategrey;
-	color: #1F5A94;
-}
-
-.Academics h3:hover{
- 	color: #12a4d9;
-}
-
-.Favourites h4{
-	background-color: #e9eaea;
-	padding: 10px 0px 10px 15px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	border-bottom: 0.5px solid slategrey;
-	color: #1F5A94;
-}
-
-/* black background */
-.blacktop{
-	min-height: 20vh;
-	padding-bottom: 3px;
-	border-bottom: solid 10px;
-	border-bottom-color: #cf1578;
-	background-color: #322e2f;
-	color: #FFFFFF;
-	margin-top: 0px;
-	padding-top: 0px;
-}
-
-.blacktop2{
+.heading {
 	padding-bottom: 10px;
 	border-bottom: solid 10px;
 	border-bottom-color: #cf1578;
@@ -298,13 +221,13 @@ footer .footer a:hover{
 	margin-bottom: 10px;
 }
 
-.blackcontent{
+.heading_content{
 	margin: 0 auto;
 	max-width: 1000px;
 	width: 95%;
 }
 
-.blackcontent figure{
+.heading_content figure{
 	padding-top: 20px;
 	padding-bottom: 0px;
 }
@@ -319,7 +242,7 @@ main header {
 	justify-content: center;
 }
 
-.London{
+.london{
 	font-size: 40px;
 	padding-top: 5px;
 	color: #e8d21d;
@@ -358,18 +281,18 @@ main header {
 
 
 /*login button*/
-.secondary-login{
+.studentlist_login{
 	font-size: 22px;
 	float: right;
 }
-.secondary-login a{
+.studentlist_login a{
 	color: #12a4d9;
 
 	position: relative;
 	top: -35px;
 	right: 205px;
 }
-.secondary-login a::before{
+.studentlist_login a::before{
 	content: url(../images/login-grey.png);
 	position: relative;
 	right: 3px;
@@ -385,9 +308,6 @@ main header {
 	padding-top: 0px;
 }
 
-.accordion h4:hover{
-	color: #12a4d9;
-}
 
 /*quote design*/
 

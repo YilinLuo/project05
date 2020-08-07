@@ -100,7 +100,7 @@ include "inc/html-top.php";
 
     <div class="container">
         <div class="row row-centered">
-            <div class="col-centered">
+            <div class="col-md-6 col-centered">
 
                 <div class="login">
         
@@ -122,8 +122,8 @@ include "inc/html-top.php";
                             </div>
 
                             <div class="form-group row">
-                                <input type="submit" class="btn btn-primary float-left" value="Login">
-                                <a class = "btn btn-danger  cancelBtn float-right" href="secondary.php">Cancel</a>
+                                <input type="submit" class="btn submit_button float-left" value="Login">
+                                <a class = "btn cancel_button float-right login_cancel" href="secondary.php">Cancel</a>
                             </div>
 
                             <br>

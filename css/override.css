@@ -58,13 +58,13 @@ body{
     margin:0;
 }
 
-.btn-danger
+.cancel_button
 {
     background-color:#8a1f1f;
     border-color:#8a1f1f;
 }
 
-.btn-primary
+.submit_button
 {
     background-color:#1F5A94;
     border-color:#1F5A94;
@@ -94,8 +94,11 @@ body{
     padding-top: 5px;
 }
 
-.cancelBtn
+.login_cancel
 {
     margin-left: 190px;
 }
 
+.float_right {
+    float: right!important;
+}
