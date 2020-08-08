@@ -132,8 +132,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary submit_button float left" value="Submit">
-                            <a class = "btn btn-primary cancel_button login_cancel" href="index.php">&#10006; Home</a>
-                            <a class = "btn btn-primary cancel_button login_cancel" href="studentlist.php">&#10006; Student List</a> 
+                            <a class = "btn btn-primary cancel_button login_cancel" href="index.php">Back to Home</a>
+                            <a class = "btn btn-primary cancel_button login_cancel" href="studentlist.php">Back to Student List</a> 
                         </div>
 
                          <br><br>
