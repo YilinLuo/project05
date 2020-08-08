@@ -107,14 +107,6 @@ include "inc/html-top.php"; ?>
 								<label for="photo" class="label" id="photo-label">Upload a pic: *</label><input type="file" name="photo" id="photo" class="button">
 							</div>
 
-							<div class="form-group checkbox">
-
-								<input type="checkbox" name="confirm" id="confirm" required>
-								<label for="confirm">Confirmed</label>
-								<br>
-
-							</div>
-
 							<input class="btn submit_button float-left" type="submit" name="submit" value="Submit">
 							<a class="btn cancel_button float-right" href="studentlist.php">Cancel</a>
 
