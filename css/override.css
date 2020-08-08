@@ -58,6 +58,7 @@ body{
     margin:0;
 }
 
+/* formerly btn-danger (Bootstrap) */
 .cancel_button
 {
     background-color:#8a1f1f;

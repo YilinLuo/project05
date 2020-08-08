@@ -79,7 +79,7 @@ include "inc/html-top.php"; ?>
 
 								<label class="control-label" for="bio">Excerpt *:</label>
 						
-								<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about the student. &NewLine;Examples: Name? Major? Membership? Achievements? Hobies?"  required><?php echo $bio; ?></textarea>
+								<textarea class="form-control" id="bio" name="bio" rows="3" cols="50" placeholder="A short description about the student. &NewLine;Examples: Name? Major? Membership? Achievements? Hobbies?"  required><?php echo $bio; ?></textarea>
 						
 								<br>
 
@@ -107,8 +107,8 @@ include "inc/html-top.php"; ?>
 								<label for="photo" class="label" id="photo-label">Upload a pic: </label><input type="file" name="photo" id="photo" class="button">
 							</div>
 
-							<input class="btn submit_button float-left" type="submit" name="submit" value="Submit">
-							<a class="btn cancel_button float-right" href="studentlist.php">Cancel</a>
+							<input class="btn btn-primary submit_button float-left" type="submit" name="submit" value="Submit">
+							<a class="btn btn-primary cancel_button float-right" href="studentlist.php">Cancel</a>
 
 						</div>	
 
