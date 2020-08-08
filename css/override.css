@@ -64,6 +64,12 @@ body{
     border-color:#8a1f1f;
 }
 
+.cancel_button:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
 .submit_button
 {
     background-color:#1F5A94;
