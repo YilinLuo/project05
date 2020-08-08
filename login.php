@@ -136,7 +136,6 @@ include "inc/html-top.php";
                             <div class="form-group row">
                                 <input type="submit" class="btn submit_button float-left" value="Login">
                                 <a class = "btn cancel_button float-right login_cancel" href="studentlist.php">Student List</a>
-                                <a class = "btn cancel_button float-right login_cancel" href="index.php">Home</a>
                                 
                             </div>
 
