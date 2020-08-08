@@ -21,10 +21,10 @@
 
 			<div class="studentlist_login">
 				<?php if(isset($_SESSION['username'])) { ?>
-			      <a href="logout.php">&#x1f511; Logout</a>
+			      <a href="logout.php">&#128274; Logout</a>
 			    <?php } 
 			    else { ?>
-			      <a href="login.php">&#x1f511; Login</a>
+			      <a href="login.php">&#128274; Login</a>
 			    <?php } ?>
 			</div>
 		</div>
