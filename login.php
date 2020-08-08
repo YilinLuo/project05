@@ -6,6 +6,8 @@ $customTitle = "Login Page";
 
 $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
 
+<link rel='stylesheet' href='css/styles.css'>
+
 <link rel='stylesheet' href='css/override.css'>";
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -98,7 +100,17 @@ include "inc/html-top.php";
 
 ?>
 
+    <header class="heading">
+        <div class = "heading_content">
+            <div class="homebtn">
+                <a href="index.php">Home</a>
+            </div>
+
+        </div>
+    </header>
+
     <div class="container">
+
         <div class="row row-centered">
             <div class="col-md-6 col-centered">
 
@@ -123,13 +135,9 @@ include "inc/html-top.php";
 
                             <div class="form-group row">
                                 <input type="submit" class="btn submit_button float-left" value="Login">
-                                <a class = "btn cancel_button float-right login_cancel" href="secondary.php">Cancel</a>
-                            </div>
-
-                            <br>
-
-                            <div>
-                                <p>Don't have an account? <a class="text-warning" href="register.php">Sign up now</a></p>
+                                <a class = "btn cancel_button float-right login_cancel" href="studentlist.php">Student List</a>
+                                <a class = "btn cancel_button float-right login_cancel" href="index.php">Home</a>
+                                
                             </div>
 
                     </form>

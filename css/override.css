@@ -96,7 +96,8 @@ body{
 
 .login_cancel
 {
-    margin-left: 190px;
+    /* margin-left: 190px; */
+    margin-left: 15px;
 }
 
 .float_right {

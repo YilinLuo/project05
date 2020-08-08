@@ -13,7 +13,6 @@
 	include "inc/html-top.php";
 ?>
 
-<article>
 	<header class="heading">
 		<div class = "heading_content">
 			<div class="homebtn">
@@ -30,7 +29,8 @@
 			</div>
 		</div>
 	</header>
-
+	
+<article>
 	<div class="container">
 
 		<h1 class="london">London</h1>
