@@ -90,12 +90,7 @@ body{
 
     width: 90%;
 }
-.upper-right .login-container a::before{
-	content: url(../images/login-black.png);
-	position: relative;
-	top: 9px;
 
-}
 /*middle - layout*/
 .middle{
 	grid-column: 1 / 4;

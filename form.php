@@ -64,7 +64,7 @@ include "inc/html-top.php"; ?>
 									
 									<div class="col-sm-1.5 http-prefix">https://</div>
 									
-									<input class="d-inline form-control col-sm-10" type="text" id="link" name="link" placeholder="link to personal page. Don't include 'https://'" value="<?php echo $link; ?>" required><br>
+									<input class="d-inline form-control col-sm-10" type="text" id="link" name="link" placeholder="link to Lab 5. Don't include 'https://'" value="<?php echo $link; ?>" required><br>
 								</div>
 
 							</div>

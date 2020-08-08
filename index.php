@@ -34,11 +34,11 @@ include "inc/html-top.php";
 
 	<section class="bottom-left">
 		<div class="name-reference">
-			<div class="class-name">Advanced Front-end Web Design and Development</div>
+			<div class="class-name">Advanced Front-End Web Design and Development</div>
 
 			<div class="img-reference">
 
-				<a href="https://docs.csc174.org/" target="_blank">About this course</a>
+				<a href="https://docs.csc174.org/" target="_blank">About this course &#8599;</a>
 			</div>
 		</div>
 	</section>

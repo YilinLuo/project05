@@ -292,13 +292,6 @@ main header {
 	top: -35px;
 	right: 205px;
 }
-.studentlist_login a::before{
-	content: url(../images/login-grey.png);
-	position: relative;
-	right: 3px;
-	top: 4px;
-}
-/**/
 
 
 

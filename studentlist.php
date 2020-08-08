@@ -21,15 +21,15 @@
 
 			<div class="studentlist_login">
 				<?php if(isset($_SESSION['username'])) { ?>
-			      <a href="logout.php">Logout</a>
+			      <a href="logout.php">&#x1f511; Logout</a>
 			    <?php } 
 			    else { ?>
-			      <a href="login.php">Login</a>
+			      <a href="login.php">&#x1f511; Login</a>
 			    <?php } ?>
 			</div>
 		</div>
 	</header>
-	
+
 <article>
 	<div class="container">
 
@@ -51,7 +51,7 @@
 					</div> 
 
 					<div class="readmore_column">
-						<a class="read-more" href="https://<?php echo $data["link"];?>">Read More!</a>
+						<a class="read-more" target="_blank" href="https://<?php echo $data["link"];?>">Read More! &#8599;</a>
 							<?php if(isset($_SESSION['username'])) { ?>
 						<div>
 							<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
@@ -72,11 +72,11 @@
 		user (visitor) can visit Course Documentation website -->
 	<?php
 	if(isset($_SESSION['username'])) { ?>
-		<a href="new.php" class="new" title="Add new student's information">Add New Entry</a>
+		<a href="new.php" class="new" title="Add new student's information">&#43; Add New Entry</a>
 	<?php } else { ?>
 		<p class="footer">
 		CSC 174: Advanced Front-end Web Design and Development -
-		<a href="http://docs.csc174.org" target=_blank>Course home page</a>
+		<a href="http://docs.csc174.org" target=_blank>Course home page &#8599;</a>
 		</p>
 	<?php } ?>
 </footer>
