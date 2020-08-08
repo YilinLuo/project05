@@ -104,7 +104,7 @@ include "inc/html-top.php"; ?>
 								<?php if($formTitle == "Update") { ?>
 									<label><input type="checkbox" name="photo-change" class="photo-change" value="1">I want to replace the current photo.</label>
 								<?php } ?>
-								<label for="photo" class="label" id="photo-label">Upload a pic: *</label><input type="file" name="photo" id="photo" class="button">
+								<label for="photo" class="label" id="photo-label">Upload a pic: </label><input type="file" name="photo" id="photo" class="button">
 							</div>
 
 							<input class="btn submit_button float-left" type="submit" name="submit" value="Submit">
