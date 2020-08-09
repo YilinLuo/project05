@@ -8,7 +8,7 @@
 	$customTitle = "Student List";
 
 	$customCSS = "<link rel='stylesheet' href='css/styles.css'>	
-		<link rel='stylesheet' href='css/navigation.css'> <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'>";
+		<link rel='stylesheet' href='css/navigation.css'> <link rel='stylesheet' href='css/override.css'> <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'>";
 
 	include "inc/html-top.php";
 ?>
@@ -37,24 +37,7 @@
 			   </li>
 			  </ul>
 		</nav>
-
-	<!---
-		<div class = "heading_content">
-			<div class="homebtn navbar-brand">
-				<a href="index.php"> <img src="images/icon.png" alt="Logo"> </a>
-			</div>
-
-			<div class="studentlist_login mr-sm-2">
-				<?php if(isset($_SESSION['username'])) { ?>
-			      <a href="logout.php">&#128274; Logout</a>
-			    <?php } 
-			    else { ?>
-			      <a href="login.php" > <img src="images/login-icon.png" alt="Login Icon"> Login</a>
-			    <?php } ?>
-			</div>
-		</div>
-	-->
-	</nav>
+	
 	</header>
 
 <article>

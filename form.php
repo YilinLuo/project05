@@ -21,7 +21,7 @@ include "inc/html-top.php"; ?>
 		}
 	?>
 
-	<h1 class="text-center edit"><?php echo $formTitle?> Student Information</h1>
+	<h1 class="text-center newEntry"><?php echo $formTitle?> Student Information</h1>
 	
 	<br>
 	

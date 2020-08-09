@@ -153,8 +153,8 @@ include "inc/html-top.php";
                             </div>
 
                             <div class="form-group row">
-                                <a class = "btn btn-primary cancel_button login_cancel" href="studentlist.php">Cancel</a>
                                 <input type="submit" class="btn btn-primary submit_button" value="Login">
+                                <a class = "btn btn-primary cancel_button login_cancel" href="studentlist.php">Cancel</a>
                                 
                                 
                             </div>
