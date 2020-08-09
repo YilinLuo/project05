@@ -1,4 +1,4 @@
-# Project 4
+# Project 5
 
 ## London
 
@@ -14,10 +14,10 @@
 -
 
 ### Technician
--
--
--
--
+- enabled the php condition that only allows logged-in users to see edit/delete/add options.
+- changed the database setting and made sure everything worked in accordance to IA's editing of the webpage.
+- helped debug some CSS layout related to logged-in & out changes of website presentation.
+- coordinated the teamwork, and did the final validation on CSS and HTML.
 -
 
 ### IA
