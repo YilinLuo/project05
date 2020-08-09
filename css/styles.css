@@ -161,10 +161,11 @@ footer .footer a:hover{
 .readmore_column a.read-more{
 	flex: 0 0 auto;
 	height: fit-content;
-
 	position: relative;
+	
 	top: 45%;
 }
+
 .readmore_column div{
 	margin-left: 14%;
 

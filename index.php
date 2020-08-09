@@ -38,7 +38,7 @@ include "inc/html-top.php";
 
 			<div class="img-reference">
 
-				<a href="https://docs.csc174.org/" target="_blank">About this course &#8599;</a>
+				<a href="https://docs.csc174.org/" target="_blank">About this course <img src="images/external-link.png" alt="external link icon"></a>
 			</div>
 		</div>
 	</section>

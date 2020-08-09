@@ -51,7 +51,7 @@
 					</div> 
 
 					<div class="readmore_column">
-						<a class="read-more" target="_blank" href="https://<?php echo $data["link"];?>">Read More! &#8599;</a>
+						<a class="read-more" target="_blank" href="https://<?php echo $data["link"];?>">Read More!<img src="images/external-link.png" alt="external link icon"></a>
 							<?php if(isset($_SESSION['username'])) { ?>
 
 						<div>
@@ -80,7 +80,7 @@
 	<?php } else { ?>
 		<p class="footer">
 		CSC 174: Advanced Front-end Web Design and Development -
-		<a href="http://docs.csc174.org" target=_blank>Course home page &#8599;</a>
+		<a href="http://docs.csc174.org" target=_blank>Course home page <img src="images/external-link.png" alt="external link icon"></a>
 		</p>
 	<?php } ?>
 </footer>
