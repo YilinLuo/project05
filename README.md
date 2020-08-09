@@ -2,23 +2,27 @@
 
 ## London
 
-- Qi Miao (Visual Designer)
-- Alejandro Ramirez (Technician)
-- Bo Wu (IA)
+- Yilin Luo (Technician)
+- Emely Rosa (Visual Designer)
+- Elise Frelinger (IA)
 
 ### Visual Designer
-- Use the Bootstrap framework
-- Decorate form.php, login.php, and register.php
-- Use the same background image, fonts, colors, and styles with the original websites
+- 
+-
+-
+-
+-
 
 ### Technician
-- Set up the database on the class server
-- Saved data to the database
-- Pulled info from database, displayed it on the F-Page
-- Added image uploading (with help from the files in Slack)
-- Made sure everything validates
-- Cleaned up PHP, added PHP includes
+-
+-
+-
+-
+-
 
 ### IA
-- Create form
-- ontology, taxonomy, choreography of login and modify system
+- Adjusted choreography to remove extra steps and pages, make the end-location of links intuitive, and otherwise worked toward the "principle of least surprise"
+- Made page names and classes semantic
+- Made the login page visibly part of the website and easy to access; made the registration page difficult to find in the site itself so that only students can log in
+- Adjusted links so that both the login and registration pages can redirect to either the index or student list, depending on what the user wants
+- Made external links (including the Course Documentation website and the Lab 5's) intuitive, and set them up/verified that they would open in a separate tab
