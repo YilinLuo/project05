@@ -53,14 +53,18 @@
 					<div class="readmore_column">
 						<a class="read-more" target="_blank" href="https://<?php echo $data["link"];?>">Read More! &#8599;</a>
 							<?php if(isset($_SESSION['username'])) { ?>
+
 						<div>
 							<a class = "edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
 							<a class = "delete" onclick="return confirm('Are you sure you want to delete: <?php echo $data["firstname"] . " " . $data["lastname"]; ?>?')" href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
-						</div> 
+					
+</div> 
+				<?php } ?>
+					
 					</div>
 				</div> 
-				<?php } ?>
 <?php } ?>
+
 	</div> 
 
  </article>
