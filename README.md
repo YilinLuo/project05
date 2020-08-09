@@ -7,9 +7,9 @@
 - Elise Frelinger (IA)
 
 ### Visual Designer
-- 
--
--
+- Added an icon in the title 
+- Changed the label "Home" to the logo
+- Changed external link icons 
 -
 -
 

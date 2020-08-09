@@ -19,7 +19,7 @@
 	font-size: 20px;
 	display: block;
 	justify-content: center;
-	color: #1F5A94;
+	color: #f3bad8;
 	font-family: 'Nunito', sans-serif;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
@@ -37,11 +37,11 @@
     text-align: right;
 }
 
-.menu-home{
-	padding-left: 0px;
-}
+
 
 
 .menu a.is-current {
-	color: mediumvioletred;
+	text-decoration: underline;
+	font-size:25px;
 }
+

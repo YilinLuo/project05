@@ -8,7 +8,9 @@ $customCSS = "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bo
 
 <link rel='stylesheet' href='css/styles.css'>
 
-<link rel='stylesheet' href='css/override.css'>";
+<link rel='stylesheet' href='css/override.css'>
+
+<link rel='stylesheet' href='css/navigation.css'>";
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
@@ -101,12 +103,29 @@ include "inc/html-top.php";
 ?>
 
     <header class="heading">
-        <div class = "heading_content">
-            <div class="homebtn">
-                <a href="index.php"> <img src="images/icon.png" alt="Logo"> </a>
-            </div>
-
-        </div>
+        <nav class="navbar navbar-expand-sm menu">
+            <a class="navbar-brand" href="index.php"> 
+                <figure>
+                    <img src="images/icon.png" alt="logo">
+                </figure>
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="studentlist.php">Student List</a>
+                </li>
+                <li class="nav-item">
+                    <?php if(isset($_SESSION['username'])) { ?>
+                  <a href="logout.php"> <img src="images/login-icon.png" alt="Login Icon"> Logout</a>
+                <?php } 
+                else { ?>
+                  <a href="login.php" > <img src="images/login-icon.png" alt="Login Icon"> Login</a>
+                <?php } ?>
+               </li>
+              </ul>
+        </nav>
     </header>
 
     <div class="container">
@@ -134,8 +153,9 @@ include "inc/html-top.php";
                             </div>
 
                             <div class="form-group row">
-                                <input type="submit" class="btn btn-primary submit_button float-left" value="Login">
-                                <a class = "btn btn-primary cancel_button float-right login_cancel" href="studentlist.php">Back to Student List</a>
+                                <a class = "btn btn-primary cancel_button login_cancel" href="studentlist.php">Cancel</a>
+                                <input type="submit" class="btn btn-primary submit_button" value="Login">
+                                
                                 
                             </div>
 

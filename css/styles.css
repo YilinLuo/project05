@@ -59,7 +59,7 @@ h4 {
 a {
 	font-weight: 600;
 	font-size: 1.1em;
-	color: #1F5A94;
+	color: #ef129f;
 	text-decoration : none;
 }
 
@@ -94,7 +94,7 @@ footer {
 	padding-bottom: 0px;
 
 
-	background-color: #322e2f;
+	background-color:#696364 ;
 
 	height: 50px;
 }
@@ -215,11 +215,14 @@ footer .footer a:hover{
 	padding-bottom: 10px;
 	border-bottom: solid 10px;
 	border-bottom-color: #cf1578;
-	background-color: #322e2f;
+	background-color: #696364;
 	color: #FFFFFF;
 	margin-top: 0px;
 	padding-top: 0px;
-	margin-bottom: 10px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-right:20px;
+	
 }
 
 .heading_content{
@@ -254,11 +257,10 @@ main header {
 
 /*home button*/
 .homebtn{
-	position: relative;
+	
     font-size: 22px;
-
     left: -30px;
-
+	
     width: fit-content;
 }
 .homebtn a{
@@ -283,15 +285,10 @@ main header {
 /*login button*/
 .studentlist_login{
 	font-size: 22px;
-	float: right;
+	
 }
-.studentlist_login a{
-	color: #12a4d9;
 
-	position: relative;
-	top: -35px;
-	right: 205px;
-}
+
 
 
 

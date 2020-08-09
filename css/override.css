@@ -59,10 +59,14 @@ body{
 }
 
 /* formerly btn-danger (Bootstrap) */
+
 .cancel_button
 {
     background-color:#8a1f1f;
     border-color:#8a1f1f;
+    float:left;
+    margin-right:20px;
+
 }
 
 .cancel_button:hover {
