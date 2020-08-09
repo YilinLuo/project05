@@ -110,9 +110,10 @@ include "inc/html-top.php"; ?>
 							<input class="btn btn-primary submit_button float-left" type="submit" name="submit" value="Submit">
 							<a class="btn btn-primary cancel_button float-right" href="studentlist.php">Cancel</a>
 
-						</div>	
+					
 
 					</form>
+							</div>	
 			</div>
 		</div>
 
