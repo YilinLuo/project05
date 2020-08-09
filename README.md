@@ -9,8 +9,8 @@
 ### Visual Designer
 - Added an icon in the title 
 - Changed the label "Home" to the logo
-- Changed external link icons 
--
+- Changed external link ad login icons 
+- Added a navbar and navbar items
 -
 
 ### Technician

@@ -6,7 +6,7 @@ include "inc/html-top.php";
 
 
 	<section class="upper-left">
-		<img src="images/logo.png" alt="csc 174">
+		<img src="images/icon.png" alt="csc 174">
 		<div class="number-semester">
 			<!-- <div class="semester">2020 Summer</div> -->
 			<div class="class-number">CSC 174</div>
@@ -17,10 +17,10 @@ include "inc/html-top.php";
 	<section class="upper-right">
 		<div class="login-container">
 			<?php if(isset($_SESSION['username'])) { ?>
-			   <a href="logout.php">&#128274; Logout</a>
+			   <a href="logout.php"> <img src="images/login-icon.png" alt="Login Icon"> Logout</a>
 			   <?php } 
 			   else { ?>
-			   <a href="login.php">&#128274; Login</a>
+			   <a href="login.php"> <img src="images/login-icon.png" alt="Login Icon"> Login</a>
 			 <?php } ?>
 		</div>
 	</section>
