@@ -269,7 +269,6 @@ main header {
 
 }
 .homebtn a::before{
-	content: url(../images/go-back.png);
     background-repeat: no-repeat;
     position: relative;
     left: 6px;

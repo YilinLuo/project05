@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title><?php echo $customTitle; ?> - CSC 174 - Project 4 London</title>
+		<title><?php echo $customTitle; ?> CSC 174 - Project 4 London</title>
+		<link rel="icon" href="images/icon.png">
 		<?php echo $customCSS; ?>
 
 		<?php if($formTitle == "Update") { ?>

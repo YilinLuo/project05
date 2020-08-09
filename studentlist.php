@@ -16,7 +16,7 @@
 	<header class="heading">
 		<div class = "heading_content">
 			<div class="homebtn">
-				<a href="index.php">Home</a>
+				<a href="index.php"> <img src="images/icon.png" alt="Logo"> </a>
 			</div>
 
 			<div class="studentlist_login">
