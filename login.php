@@ -121,7 +121,7 @@ include "inc/html-top.php";
                   <a href="logout.php"> <img src="images/login-icon.png" alt="Login Icon"> Logout</a>
                 <?php } 
                 else { ?>
-                  <a href="login.php" > <img src="images/login-icon.png" alt="Login Icon"> Login</a>
+                  <a class="is-current" href="login.php" > <img src="images/login-icon.png" alt="Login Icon"> Login</a>
                 <?php } ?>
                </li>
               </ul>
