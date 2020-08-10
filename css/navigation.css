@@ -37,11 +37,7 @@
     text-align: right;
 }
 
-
-
-
 .menu a.is-current {
 	text-decoration: underline;
-	font-size:25px;
 }
 

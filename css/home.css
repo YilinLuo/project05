@@ -91,6 +91,19 @@ body{
     width: 90%;
 }
 
+.upper-right .login-container{
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	width: 90%;
+}
+.upper-right a{
+	font-size: 30px;
+
+	padding: 20px;
+
+	display: block;
+}
+
 /*middle - layout*/
 .middle{
 	grid-column: 1 / 4;
@@ -154,18 +167,7 @@ Modules
 }
 
 
-.upper-right .login-container{
-	text-align: center;
-	font-family: 'Nunito', sans-serif;
-	width: 90%;
-}
-.upper-right a{
-	font-size: 60px;
 
-	padding: 20px;
-
-	display: block;
-}
 
 
 .middle .welcome{

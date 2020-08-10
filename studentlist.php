@@ -90,7 +90,7 @@
 	<?php } else { ?>
 		<p class="footer">
 		CSC 174: Advanced Front-end Web Design and Development -
-		<a href="http://docs.csc174.org" target=_blank>Course home page <img src="images/external-link.png" alt="external link icon"></a>
+		<a href="http://docs.csc174.org" target=_blank>Course home page <img src="images/pink-external.png" alt="external link icon"></a>
 		</p>
 	<?php } ?>
 </footer>
