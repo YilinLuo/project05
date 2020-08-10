@@ -11,7 +11,8 @@
 - Changed the label "Home" to the logo
 - Changed external link ad login icons 
 - Added a navbar and navbar items
--
+- Added borders and backgrounds to Edit and Delete links
+- Changed the color of all links to a darker pink
 
 ### Technician
 - enabled the php condition that only allows logged-in users to see edit/delete/add options.
