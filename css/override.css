@@ -52,6 +52,7 @@ body{
 .newEntry{
     color:#322e2f;
     text-decoration:underline;
+    margin-top:20px;
 }
 
 .delete{
