@@ -6,9 +6,11 @@
 /*******************************BASE STYLES*************************************/
 img
 {
-	height: auto;
 	max-width: 100%;
+	margin-top: -15px;
+	vertical-align: text-top;
 }
+
 figcaption
 {
     line-height: 24px;
