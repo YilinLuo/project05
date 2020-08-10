@@ -16,7 +16,7 @@
 	<header class="heading">
 		<nav class="navbar navbar-expand-sm menu">
 			<a class="navbar-brand" href="index.php"> 
-				<figure>
+				<figure class="logo">
 					<img src="images/icon.png" alt="logo">
 				</figure>
 			</a>
